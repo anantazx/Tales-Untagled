@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -35,14 +36,15 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private LayerMask Walllayer;
 
 
-
-
     [Header("Animation")]
     [SerializeField] private Animator anim;
 
-
+    [Header("Effect")]
+    [SerializeField] private ParticleSystem dust;
 
     private bool Flipright = true;
+    private bool isDead = false;
+
   
     void Start()
     {
@@ -53,89 +55,77 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move = Input.GetAxis("Horizontal") ;
-
-
-        if(IsGrounded() && !Input.GetButton("Jump"))
+        if (isDead)
         {
-            anim.SetBool("IsJumping", false);
-            DoubleJump = false;
+            return;
+        }
+        if (DialogueManager.GetInstance().DialogueIsPlaying)
+        {
+            return;
         }
 
-        if (IsGrounded())
+        if (GameManager.isPaused == false)
         {
-            CoyoteTimeCounter = CoyoteTime;
-            anim.SetBool("IsJumping", false);
-        }
-        else
-        {
-            CoyoteTimeCounter -= Time.deltaTime;
-        }
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            JumpBufferCounter = JumpBufferTIme;
-            anim.SetBool("IsJumping", true);
-        }
-        else
-        {
-            JumpBufferCounter -= Time.deltaTime;
-        }
-
-       if (Input.GetButtonDown("Jump"))
-        {
-            if (CoyoteTimeCounter > 0f || DoubleJump && JumpBufferCounter > 0f)
+            Move = Input.GetAxis("Horizontal");
+            if (IsGrounded() && !Input.GetButton("Jump"))
             {
-                RB.velocity = new Vector2(RB.velocity.x, DoubleJump ? DoubleJumpPower : JumpForce );
-                DoubleJump = !DoubleJump;
-                JumpBufferCounter = 0f;
+                anim.SetBool("IsJumping", false);
+                DoubleJump = false;
+            }
+
+            if (IsGrounded())
+            {
+                CoyoteTimeCounter = CoyoteTime;
+                anim.SetBool("IsJumping", false);
+            }
+            else
+            {
+                CoyoteTimeCounter -= Time.deltaTime;
+            }
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                JumpBufferCounter = JumpBufferTIme;
                 anim.SetBool("IsJumping", true);
+                CreateDust();
             }
-        }
+            else
+            {
+                JumpBufferCounter -= Time.deltaTime;
+            }
 
-        if (Input.GetButtonUp("Jump") && RB.velocity.y > 0f)
-        {
-            anim.SetBool("IsJumping", true);
-            RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
-            CoyoteTimeCounter = 0f;
+            if (Input.GetButtonDown("Jump"))
+            {
+                if (CoyoteTimeCounter > 0f || DoubleJump && JumpBufferCounter > 0f)
+                {
+                    RB.velocity = new Vector2(RB.velocity.x, DoubleJump ? DoubleJumpPower : JumpForce);
+                    DoubleJump = !DoubleJump;
+                    JumpBufferCounter = 0f;
+                    anim.SetBool("IsJumping", true);
+                    CreateDust();
+                }
+            }
+
+            if (Input.GetButtonUp("Jump") && RB.velocity.y > 0f)
+            {
+                anim.SetBool("IsJumping", true);
+                RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
+                CoyoteTimeCounter = 0f;
+                CreateDust();
+            }
+
+            anim.SetFloat("Speed", Mathf.Abs(Move));
+
+            WallSlide();
+            WallJump();
+            Movement();
+        }
+           
             
-        }
-
-        anim.SetFloat("Speed", Mathf.Abs(Move));
-
-        WallSlide();
-        WallJump();
+       
+        
 
     }
-
-    void FixedUpdate()
-    {
-        if (Move != 0)
-        {
-            if (!IsWallJumping)
-            {
-                RB.velocity = new Vector2(Move * Speed, RB.velocity.y);
-            }
-        }
-
-        if (Move > 0 && !Flipright)
-        {   
-            if (!IsWallJumping)
-            {
-                Flip();
-            }
-        }
-
-        if (Move < 0 && Flipright)
-        {
-            if (!IsWallJumping)
-            {
-                Flip();
-            }
-        }       
-
-    }
-
 
   
     void Flip()
@@ -143,8 +133,8 @@ public class CharacterMovement : MonoBehaviour
         Vector3 currentScale = gameObject.transform.localScale;
         currentScale.x *= -1;
         gameObject.transform.localScale = currentScale;
-
         Flipright = !Flipright;
+        
     }
    
     private bool IsGrounded()
@@ -163,6 +153,7 @@ public class CharacterMovement : MonoBehaviour
         {
             IsWallSlide = true;
             RB.velocity = new Vector2(RB.velocity.x, Mathf.Clamp(RB.velocity.y, -WallSlideSpeed, float.MaxValue));
+            CreateDust();
         }
         else
         {
@@ -170,6 +161,33 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
+    private void Movement()
+    {
+        if (Move != 0)
+        {
+            if (!IsWallJumping)
+            {
+                RB.velocity = new Vector2(Move * Speed, RB.velocity.y);
+                CreateDust();
+            }
+        }
+
+        if (Move > 0 && !Flipright)
+        {
+            if (!IsWallJumping)
+            {
+                Flip();
+            }
+        }
+
+        if (Move < 0 && Flipright)
+        {
+            if (!IsWallJumping)
+            {
+                Flip();
+            }
+        }
+    }
 
     private void WallJump()
     {
@@ -198,6 +216,7 @@ public class CharacterMovement : MonoBehaviour
                 Vector3 localScale = transform.localScale;
                 localScale.x *= -1f;
                 transform.localScale = localScale;
+                
             }
 
             Invoke(nameof(StopWallJumping), WallJumpingDuration);
@@ -210,4 +229,64 @@ public class CharacterMovement : MonoBehaviour
     {
         IsWallJumping = false;
     }
+
+    private void CreateDust()
+    {
+        if (IsGrounded())
+        {
+            if (dust == null)
+                return;
+
+            ParticleSystem.ShapeModule shapeParticell = dust.shape;
+            shapeParticell.position = new Vector3(0f, 0f, 0f);
+            shapeParticell.scale = new Vector3(1.35f, 0f, 1);
+            dust.Play();
+        }
+
+        if (IsWallSlide)
+        {
+            if (dust == null)
+                return;
+
+            ParticleSystem.ShapeModule shapeParticell = dust.shape;
+
+            if (Move > 0)
+            {
+                shapeParticell.position = new Vector3(0.55f, 1.3f, 0f);
+            }
+            else if(Move < 0)
+            {
+                shapeParticell.position = new Vector3(-0.55f, 1.3f, 0f);
+            }
+
+            shapeParticell.scale = new Vector3(0f, 2f, 1);
+            dust.Play();
+        }
+
+    
+    }
+
+    private void Die()
+    {
+        isDead = true;  
+        anim.SetTrigger("Dead");
+        StartCoroutine(Respawn(2f));
+    }
+
+    IEnumerator Respawn(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            Die();
+        }
+    }
+
+    
+
 }

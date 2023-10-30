@@ -8,6 +8,7 @@ TagManager:
   - OneWayPlatform
   - Collectible
   - Box
+  - Water
   layers:
   - Default
   - TransparentFX

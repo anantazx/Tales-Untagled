@@ -1,0 +1,31 @@
+
+
+    public string id;
+    public bool collected = false;
+
+    [ContextMenu("Generate Guid For ID")]
+    private void GenerateGuid()
+    {
+        id = System.Guid.NewGuid().ToString();
+    }
+    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collected)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                onPaperRollCollect();
+            }
+        }
+       
+    }
+
+
+    private void onPaperRollCollect()
+    {
+        ItemCollector.Instance.CollectedPaperRolls();
+        collected = true;
+        Destroy(gameObject);
+    }

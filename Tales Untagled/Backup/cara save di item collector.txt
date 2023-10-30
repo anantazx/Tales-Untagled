@@ -1,0 +1,43 @@
+ public void loadData(GameData data)
+ {
+     this.Coins = data.Coins;
+
+     foreach (paperRoll idPaper in paperlist)
+     {       
+         data.paperRollCollected.TryGetValue(idPaper.id, out idPaper.collected);
+         if (idPaper.collected)
+         {
+             idPaper.GetComponent<Collider2D>().enabled = false;
+             idPaper.GetComponent<Renderer>().enabled = false;
+             
+         }
+     }
+
+   
+
+     foreach (KeyValuePair<string, bool> pair in data.paperRollCollected)
+     {
+         if (pair.Value)
+         {
+             PaperRolls++;
+         }
+     }
+
+ }
+
+ public void saveData(ref GameData data)
+ {
+     data.Coins = this.Coins;
+
+     foreach (paperRoll idPaper in paperlist )
+     {
+         if (data.paperRollCollected.ContainsKey(idPaper.id))
+         {
+             data.paperRollCollected.Remove(idPaper.id);
+         }
+         data.paperRollCollected.Add(idPaper.id, idPaper.collected);
+     }
+
+   
+
+ }
