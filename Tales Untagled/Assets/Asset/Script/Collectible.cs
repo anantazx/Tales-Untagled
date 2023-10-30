@@ -2,20 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
+using UnityEngine.VFX;
 
 public class Collectible : MonoBehaviour
 {
-
-    [SerializeField] private TextMeshProUGUI CoinsText;
-
-    void OnTriggerEnter2D(Collider2D other)
-    {   
-        if (other.gameObject.CompareTag("Player"))
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            
+           onCoinCollected();
         }
     }
+
+    private void onCoinCollected()
+    {
+        ItemCollector.Instance.colllectedCoins();
+        Destroy(gameObject);
+    }
+   
 
 }
