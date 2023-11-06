@@ -4920,19 +4920,19 @@ MonoBehaviour:
   m_LookaheadTime: 0.1
   m_LookaheadSmoothing: 3.5
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
+  m_XDamping: 0.8
   m_YDamping: 1
   m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.49
+  m_ScreenY: 0.5
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.09
   m_DeadZoneHeight: 0.11
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.49
-  m_SoftZoneHeight: 0.62
+  m_SoftZoneWidth: 0.4
+  m_SoftZoneHeight: 0.45
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -5029,7 +5029,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 20
   m_Sprite: {fileID: 1360216298, guid: b3157abad89e9064db1cc6cbb95247dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5189,6 +5189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CoinsText: {fileID: 0}
+  paperRollsText: {fileID: 0}
 --- !u!1 &8620734354457803812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,7 +5217,7 @@ Transform:
   m_GameObject: {fileID: 8620734354457803812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00000022045495, y: -0.04623271, z: -4.6232753}
+  m_LocalPosition: {x: 0.00000022045495, y: 0, z: -4.6232753}
   m_LocalScale: {x: 0.46232754, y: 0.46232754, z: 0.46232754}
   m_ConstrainProportionsScale: 0
   m_Children:
