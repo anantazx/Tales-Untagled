@@ -37,7 +37,7 @@ public class CharacterMovement : MonoBehaviour
 
 
     [Header("Animation")]
-    [SerializeField] private Animator anim;
+    [SerializeField] public Animator anim;
 
     [Header("Effect")]
     [SerializeField] private ParticleSystem dust;

@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6823303162007560667}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.815521, y: 121.715416, z: 5.135136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialiezDataIfNull: 1
+  DisableDataPersistence: 1
+  OverRideSelelctedProfileID: 1
+  TestSelectedProfileID: Test
   fileName: Test_Save_File
   useEncryptionData: 0
-  noSaveData: {fileID: 0}

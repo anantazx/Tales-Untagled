@@ -11,6 +11,9 @@ public class DialogueManager : MonoBehaviour
     [Header("Params")]
     [SerializeField] private float TypingSpeed = 0.04f;
 
+    [Header("load Global JSON")]
+    [SerializeField] private TextAsset loadGlobalsJSON;
+
     [Header("Dialogue UI")]
     [SerializeField] private GameObject DialoguePanel;
     [SerializeField] private GameObject ContinueIcon;
@@ -19,10 +22,21 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Animator PotraitAnimator;
     private Animator LayoutAnimator;
     
-
-
     [Header("Choice UI")]
     [SerializeField] private GameObject[] choices;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip[] dialogueTypingSoundClips;
+    [Range(1, 5)]
+    [SerializeField] private int frequencyLevel = 2;
+    [Range(-3, 3)]
+    [SerializeField] private float minPitch = 0.5f;
+    [Range(-3, 3)]
+    [SerializeField] private float maxPitch = 3f;
+    [SerializeField] private bool stopAudioSource;
+    [SerializeField] private bool makePredictable;
+
+    private AudioSource audioSource;
     private TextMeshProUGUI[] ChoicesText;
 
 
@@ -41,6 +55,7 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string POTRAIT_TAG = "potrait";
     private const string LAYOUT_TAG = "layout";
+    private DialogueVariables dialogueVariables;
 
 
     private void Awake()
@@ -50,6 +65,10 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Found More Than One Dialogue Manager in the scene");
         }
         instance = this;
+
+        dialogueVariables = new DialogueVariables(loadGlobalsJSON);
+
+        audioSource = this.gameObject.AddComponent<AudioSource>();
     }
 
    public static DialogueManager GetInstance()
@@ -98,6 +117,8 @@ public class DialogueManager : MonoBehaviour
         DialogueIsPlaying = true;
         DialoguePanel.SetActive(true);
 
+        dialogueVariables.Startlistening(CurrentStory);
+
 
         DisplayNameText.text = "???";
         PotraitAnimator.Play("Default");
@@ -109,6 +130,8 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator ExitDialogueMode()
     {
         yield return new WaitForSeconds(0.2f);
+
+        dialogueVariables.Stoplistening(CurrentStory);
 
         DialogueIsPlaying = false;
         DialoguePanel.SetActive(false);
@@ -167,6 +190,7 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
+                PlayDialogueSound(DialogueText.maxVisibleCharacters, DialogueText.text[DialogueText.maxVisibleCharacters]);
                 DialogueText.maxVisibleCharacters++;
                 yield return new WaitForSeconds(TypingSpeed);
             }
@@ -207,6 +231,53 @@ public class DialogueManager : MonoBehaviour
                     Debug.LogWarning("Tag Came In But Is Not Currently Being Handled: " + tag);
                     break;  
             }
+        }
+    }
+
+    private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)
+    {
+        if (currentDisplayedCharacterCount % frequencyLevel == 0)
+        {
+            if (stopAudioSource)
+            {
+                audioSource.Stop();
+            }
+            AudioClip soundClip = null;
+            // membuat untuk gampang mengecek audio dalam hashing
+            if (makePredictable)
+            {
+                int hashCode = currentCharacter.GetHashCode();
+
+                int predictableIndex = hashCode % dialogueTypingSoundClips.Length; 
+                soundClip = dialogueTypingSoundClips[predictableIndex];
+
+                int minPitchInt = (int)(minPitch * 100);
+                int maxPitchInt = (int)(maxPitch * 100);
+                int pitchRangeInt = maxPitchInt - minPitchInt;
+
+                if (pitchRangeInt != 0 )
+                {
+                    int predictablePitchInt = (hashCode % pitchRangeInt) + minPitchInt;
+                    float prediablePitch = predictablePitchInt / 100f;
+                    audioSource.pitch = prediablePitch;
+                }
+                else
+                {
+                    audioSource.pitch = minPitch;
+                }
+            }
+            // lainnya, maka akan mengacak audio
+            else 
+            {
+                // sound clip
+                int randomIndex = Random.Range(0, dialogueTypingSoundClips.Length);
+                 soundClip = dialogueTypingSoundClips[randomIndex];
+                // pitch sound
+                audioSource.pitch = Random.Range(minPitch, maxPitch);
+                //play audio
+                
+            }
+            audioSource.PlayOneShot(soundClip);
         }
     }
 
