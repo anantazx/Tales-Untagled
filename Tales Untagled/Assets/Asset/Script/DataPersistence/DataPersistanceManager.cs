@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class DataPersistanceManager : MonoBehaviour
 {
@@ -10,11 +11,14 @@ public class DataPersistanceManager : MonoBehaviour
     [SerializeField] private bool initialiezDataIfNull = false;
     [SerializeField] private bool DisableDataPersistence = false;
     [SerializeField] private bool OverRideSelelctedProfileID = false;
+    [SerializeField] private bool FirstLevelUnlocked = false;
     [SerializeField] private string TestSelectedProfileID = "";
 
     [Header("File Storage Config")]
     [SerializeField] private string fileName;
     [SerializeField] private bool useEncryptionData;
+
+
 
     private GameData gameData;
 
@@ -44,6 +48,7 @@ public class DataPersistanceManager : MonoBehaviour
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryptionData);
 
         InitializeSelectedProfileID();
+        
     }
 
     private void OnEnable()
@@ -65,7 +70,7 @@ public class DataPersistanceManager : MonoBehaviour
     }
 
 
-    public void ChangeSelectedProfileID( string profileID)
+    public void ChangeSelectedProfileID(string profileID)
     {
         // update profile untuk save dan load
         this.selectedProfileID = profileID;
@@ -100,10 +105,14 @@ public class DataPersistanceManager : MonoBehaviour
     public void NewGame()
     {
         this.gameData = new GameData();
+        UnlockedLevel(0);
     }
 
     public void LoadGame()
     {
+        
+       
+
         // return langsung jika data persistence disable
         if (DisableDataPersistence)
         {
@@ -113,11 +122,6 @@ public class DataPersistanceManager : MonoBehaviour
         // load save data apa saja dari file menggunakan data handler
         this.gameData = dataHandler.Load(selectedProfileID);
 
-        if (this.gameData == null && initialiezDataIfNull)
-        {
-            NewGame();
-        }
-
         // jika tidak ada data maka, akan dilanjutkan kepada new game.
         if (this.gameData == null)
         {
@@ -125,11 +129,22 @@ public class DataPersistanceManager : MonoBehaviour
             return;
         }
 
-        // mendorong data yang di load kepada seluruh script yang membutuhka
+        if (this.gameData == null && initialiezDataIfNull)
+        {
+            NewGame();
+        }
+
+        if (FirstLevelUnlocked)
+        {
+            UnlockedLevel(0);
+        }
+
+        // mendorong data yang di load kepada seluruh script yang membutuhkan
         foreach (IDataPersistence dataPersistenceObj in dataPersistencesObejct)
         {
             dataPersistenceObj.loadData(gameData);
         }
+
     }
 
     public void SaveGame()
@@ -153,8 +168,11 @@ public class DataPersistanceManager : MonoBehaviour
 
         //timestamp data agar kita tahu kapan terakhir di save
         gameData.lastUpdated = System.DateTime.Now.ToBinary();
-        
+
+
         dataHandler.Save(gameData, selectedProfileID);
+
+
     }
 
 
@@ -178,6 +196,88 @@ public class DataPersistanceManager : MonoBehaviour
     public Dictionary<string, GameData> GetAllProfileData()
     {
         return dataHandler.LoadAllProfiles();
+    }
+
+    public void UnlockedLevel(int levelNumber)
+    {
+        if (!gameData.unlockedLevels.ContainsKey(levelNumber))
+        {
+            gameData.unlockedLevels.Add(levelNumber, true);
+
+            // Check if the level has star data
+            if (!gameData.levelStarsCollected.ContainsKey(levelNumber))
+            {
+                // If not, set the star counter to zero
+                gameData.levelStarsCollected[levelNumber] = 0;
+            }
+
+            int nextLevel = levelNumber + 1;
+            if (!gameData.levelStarsCollected.ContainsKey(nextLevel))
+            {
+                gameData.levelStarsCollected[nextLevel] = 0;
+            }
+
+            SaveGame();
+        }
+    }
+
+    public void CollectStar(int levelNumber, int starCounter)
+    {
+        Debug.Log($"CollectStar called for level {levelNumber} with starCounter {starCounter}");
+        // mengupdate star rating jika level ada
+        if (gameData.levelStarsCollected.ContainsKey(levelNumber))
+        {
+            gameData.levelStarsCollected[levelNumber] = Mathf.Clamp(starCounter, 0, 3);
+            SaveGame();
+        }
+        else
+        {
+            Debug.LogWarning($"Level {levelNumber} is not found in levelStarsCollected dictionary.");
+        }
+
+
+        if (levelNumber == LevelSelectManager.instance.currentLevel && SceneManager.GetActiveScene().name.StartsWith(":Level "))
+        {
+            gameData.levelStarsCollected[levelNumber] = 0;
+            SaveGame();
+        }
+    }
+
+    // untuk mengecek pada script LevelSelect apakah level tersebut sudah ke unlock
+    public bool IsLevelUnlocked(int levelNumber)
+    {
+        return gameData.unlockedLevels.ContainsKey(levelNumber) && gameData.unlockedLevels[levelNumber];
+    }
+    // untuk mengecek apakah pada script memiliki collectible bintang
+    public bool IsLevelHaveStars(int levelNumber)
+    {
+        return gameData.levelStarsCollected.ContainsKey(levelNumber);
+    }
+
+    public int GetStarCountForLevels(int levelNumber)
+    {
+        if (gameData.levelStarsCollected.ContainsKey(levelNumber))
+        {
+            return gameData.levelStarsCollected[levelNumber];
+        }
+        else
+        {
+            Debug.LogWarning("there is no Star rating found on this level" + levelNumber);
+            return 0;
+        }
+    }
+
+    public string GetSelectedProfileID()
+    {
+        return selectedProfileID;
+    }
+
+    public void ResetStarsCount()
+    {
+        if (ItemCollector.Instance != null)
+        {
+            ItemCollector.Instance.RestartStarCount();
+        }
     }
 
 }

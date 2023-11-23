@@ -36,6 +36,9 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private LayerMask Walllayer;
 
 
+    [Header("Alive")]
+    [SerializeField] private Transform RespawnPoint;
+
     [Header("Animation")]
     [SerializeField] public Animator anim;
 
@@ -49,7 +52,7 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         RB = gameObject.GetComponent<Rigidbody2D>();
-
+        
     }
 
     // Update is called once per frame
@@ -249,18 +252,17 @@ public class CharacterMovement : MonoBehaviour
                 return;
 
             ParticleSystem.ShapeModule shapeParticell = dust.shape;
-
+            shapeParticell.scale = new Vector3(0f, 2f, 1);
             if (Move > 0)
             {
                 shapeParticell.position = new Vector3(0.55f, 1.3f, 0f);
+                dust.Play();
             }
             else if(Move < 0)
             {
                 shapeParticell.position = new Vector3(-0.55f, 1.3f, 0f);
+                dust.Play();
             }
-
-            shapeParticell.scale = new Vector3(0f, 2f, 1);
-            dust.Play();
         }
 
     
@@ -269,14 +271,19 @@ public class CharacterMovement : MonoBehaviour
     private void Die()
     {
         isDead = true;  
-        anim.SetTrigger("Dead");
+        anim.SetTrigger("Dead");    
         StartCoroutine(Respawn(2f));
+        
     }
 
     IEnumerator Respawn(float duration)
     {
+        Debug.Log("Respawning...");
         yield return new WaitForSeconds(duration);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        transform.position = RespawnPoint.position;
+        isDead = false;
+        anim.SetTrigger("Alive");
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

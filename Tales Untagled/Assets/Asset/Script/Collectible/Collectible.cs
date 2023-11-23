@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.VFX;
 
 public class Collectible : MonoBehaviour
 {
@@ -10,15 +8,11 @@ public class Collectible : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-           onCoinCollected();
+           
         }
     }
 
-    private void onCoinCollected()
-    {
-        ItemCollector.Instance.colllectedCoins();
-        Destroy(gameObject);
-    }
+  
    
 
 }

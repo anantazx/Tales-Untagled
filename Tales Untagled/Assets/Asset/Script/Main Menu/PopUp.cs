@@ -14,6 +14,8 @@ public class PopUp : Menu
 
     [SerializeField] private GameObject saveSlotManager;
 
+    
+
     public void ActivatedMenu(string displayText, UnityAction confirmAction, UnityAction cancelAction)
     {
 

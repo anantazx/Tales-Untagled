@@ -69,7 +69,9 @@ public class SaveSlotManager : Menu
         DataPersistanceManager.instance.SaveGame();
 
         // load scene dimana aka mengaktifkan save games karena OnSceneUnload() pada DataPersistanceManager
-        SceneManager.LoadSceneAsync("Level 1");
+        Debug.Log("load Game");
+        SceneManager.LoadSceneAsync("Level Selection");
+
     }
 
     public void ActivationMenu(bool isLoadingGame)

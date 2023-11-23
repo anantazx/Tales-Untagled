@@ -4962,7 +4962,6 @@ GameObject:
   - component: {fileID: 7739496803074420258}
   - component: {fileID: 6358658035969003138}
   - component: {fileID: 8508912218529780936}
-  - component: {fileID: 516467880227811396}
   m_Layer: 0
   m_Name: Woodcutter_0
   m_TagString: Player
@@ -5140,6 +5139,7 @@ MonoBehaviour:
   Walllayer:
     serializedVersion: 2
     m_Bits: 128
+  RespawnPoint: {fileID: 0}
   anim: {fileID: 6358658035969003138}
   dust: {fileID: 4606176469456692542}
 --- !u!95 &6358658035969003138
@@ -5176,20 +5176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerCollider: {fileID: 4600433632510697873}
---- !u!114 &516467880227811396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8328998283527625855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e91c37911849964ebf01d8fb34063d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinsText: {fileID: 0}
-  paperRollsText: {fileID: 0}
 --- !u!1 &8620734354457803812
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,14 +55,18 @@ bertemu lagi kita adi #speaker:<color=\#228B22>ToadKing</color> #potrait:ToadKin
 		Tolong beri tahu samosir untuk pulang, dan berhati hati lah kawan #speaker:<color=\#228B22>ToadKing</color> #potrait:ToadKing_Talking #layout:right
 	- else:
 		Bagaimana, apakah kau bisa membantuku#speaker:<color=\#228B22>ToadKing</color> #potrait:ToadKing_Talking #layout:right
+		
 }
-	+[Tentu saja]
+        +[Tentu saja]
 		Tentu, aku bisa membantu kamu. Apa yang kamu butuhkan?#speaker:Adi #potrait:Player_Calm#layout:left
 		Terima kasih! Aku sangat berterima kasih. Aku ingin kamu mengantarkan pesanku kepada anakku, Samosir. Dia biasanya berkeliaran di sekitar hutan ini. Tolong beri tahu dia untuk pulang.#speaker:<color=\#228B22>ToadKing</color> #potrait:ToadKing_Talking #layout:right
-		->chosen("selesai")
-	+[tidak yakin]
+		->chosen("Selesai")
+	    +[tidak yakin]
 		Aku tidak yakin bisa membantu, tetapi aku akan mencoba#speaker:Adi #potrait:Player_Calm#layout:left
 		Tidak masalah. Tolong, jika kamu melihat anakku, Samosir, beri tahu dia untuk pulang.#speaker:<color=\#228B22>ToadKing</color> #potrait:ToadKing_Talking #layout:right
+		->chosen("Postpone")
+    
+	
 ->END
 
 
