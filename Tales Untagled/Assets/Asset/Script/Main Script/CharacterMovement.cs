@@ -73,6 +73,7 @@ public class CharacterMovement : MonoBehaviour
             if (IsGrounded() && !Input.GetButton("Jump"))
             {
                 anim.SetBool("IsJumping", false);
+                anim.SetBool("IsWallJump", false);
                 DoubleJump = false;
             }
 
@@ -80,6 +81,7 @@ public class CharacterMovement : MonoBehaviour
             {
                 CoyoteTimeCounter = CoyoteTime;
                 anim.SetBool("IsJumping", false);
+                anim.SetBool("IsWallJump", false);
             }
             else
             {
@@ -156,10 +158,14 @@ public class CharacterMovement : MonoBehaviour
         {
             IsWallSlide = true;
             RB.velocity = new Vector2(RB.velocity.x, Mathf.Clamp(RB.velocity.y, -WallSlideSpeed, float.MaxValue));
+            anim.SetBool("IsWallJump", false);
+            anim.SetBool("IsJumping", false);
+            anim.SetBool("IsWallSlide", true);
             CreateDust();
         }
         else
         {
+            anim.SetBool("IsWallSlide", false);
             IsWallSlide = false;
         }
     }
@@ -219,6 +225,8 @@ public class CharacterMovement : MonoBehaviour
                 Vector3 localScale = transform.localScale;
                 localScale.x *= -1f;
                 transform.localScale = localScale;
+                anim.SetBool("IsJumping", false);
+                anim.SetBool("IsWallJump", true);
                 
             }
 
@@ -231,6 +239,7 @@ public class CharacterMovement : MonoBehaviour
     private void StopWallJumping()
     {
         IsWallJumping = false;
+        anim.SetBool("IsWallJump", false);
     }
 
     private void CreateDust()
@@ -252,15 +261,15 @@ public class CharacterMovement : MonoBehaviour
                 return;
 
             ParticleSystem.ShapeModule shapeParticell = dust.shape;
-            shapeParticell.scale = new Vector3(0f, 2f, 1);
+            shapeParticell.scale = new Vector3(0f, 3f, 1);
             if (Move > 0)
             {
-                shapeParticell.position = new Vector3(0.55f, 1.3f, 0f);
+                shapeParticell.position = new Vector3(1.2f, 1.6f, 0f);
                 dust.Play();
             }
             else if(Move < 0)
             {
-                shapeParticell.position = new Vector3(-0.55f, 1.3f, 0f);
+                shapeParticell.position = new Vector3(-1.2f, 1.6f, 0f);
                 dust.Play();
             }
         }
@@ -276,7 +285,7 @@ public class CharacterMovement : MonoBehaviour
         
     }
 
-    IEnumerator Respawn(float duration)
+    private IEnumerator Respawn(float duration)
     {
         Debug.Log("Respawning...");
         yield return new WaitForSeconds(duration);
@@ -288,12 +297,24 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Water"))
+        if (collision.gameObject.CompareTag("Water") )
         {
             Die();
         }
+
+        else if (collision.gameObject.CompareTag("Box") )
+        {
+            anim.SetBool("IsPushing", true);
+        }
     }
 
-    
+  
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            anim.SetBool("IsPushing", false);
+        }  
+    }
 }

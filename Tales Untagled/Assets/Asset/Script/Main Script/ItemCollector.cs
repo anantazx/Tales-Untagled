@@ -11,7 +11,7 @@ public class ItemCollector : MonoBehaviour, IDataPersistence
 
     private int deathCount = 0;
     private int PaperRolls = 0;
-    private int stars = 0;
+    public int stars = 0;
     [SerializeField] private TextMeshProUGUI deathCounterText;
     [SerializeField] private TextMeshProUGUI paperRollsText;
     [SerializeField] private TextMeshProUGUI starsText;

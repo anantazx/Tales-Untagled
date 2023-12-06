@@ -1,0 +1,1513 @@
+fileFormatVersion: 2
+guid: 5fd1eac2f43407041822fbe77cb3b415
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_0
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 2717
+        width: 983
+        height: 1406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f470437096ef643a87ddb88c6d0c37
+      internalID: 458286343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_1
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 2499
+        width: 1091
+        height: 1680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91095b220627c2143aabc6138a5fa222
+      internalID: 980233970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_2
+      rect:
+        serializedVersion: 2
+        x: 2755
+        y: 2511
+        width: 1323
+        height: 1661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba01172e85feb54098f1382c2400907
+      internalID: -1358132788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_3
+      rect:
+        serializedVersion: 2
+        x: 4506
+        y: 2158
+        width: 1275
+        height: 1958
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56b356c032a5d2428be7ed2090cb050
+      internalID: 1032874696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_4
+      rect:
+        serializedVersion: 2
+        x: 6171
+        y: 1941
+        width: 1275
+        height: 2167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc6af8fcb95d004a8f7e78811327e85
+      internalID: 2020209156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_5
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2124
+        width: 945
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e94f280af27c61438e70ac0ad45f08b
+      internalID: 1647884669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_6
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 2139
+        width: 532
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a98e83f3dd5d64d9052932f9c66dcf
+      internalID: 2089079825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_7
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 2124
+        width: 690
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847df540c7d9e154a8d5f3d210d45445
+      internalID: -825764873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_8
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1528
+        width: 1338
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c96a25a7565474eaad601718c0108a
+      internalID: 2024031190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_9
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 1989
+        width: 222
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd8319ad54aebd4b8f04de17b639129
+      internalID: 2096788485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_10
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 1532
+        width: 1402
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbc0e79f0c0b104583c9c698754b434
+      internalID: 651906822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_11
+      rect:
+        serializedVersion: 2
+        x: 3786
+        y: 1761
+        width: 240
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf43cd78b0369e449d55b9a3d997910
+      internalID: -1471670975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_12
+      rect:
+        serializedVersion: 2
+        x: 4326
+        y: 111
+        width: 1593
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612edc926cc7e8d40812bbb24b92b3f3
+      internalID: -423930708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_13
+      rect:
+        serializedVersion: 2
+        x: 3673
+        y: 1551
+        width: 443
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2b0c3c609b1524291599f967df2ee0
+      internalID: -41772242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1119
+        width: 330
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0c544e20534b04a986fb9021da89c2
+      internalID: 195221111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_15
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1119
+        width: 435
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace9671c3da2bed4eb556ec02a9090c1
+      internalID: 116089893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_16
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1123
+        width: 326
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5912e2b219ec01468952f7c4423b74c
+      internalID: 1816788491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_17
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1119
+        width: 375
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779d4bf58ccef0b4b9cbd10ae31bff63
+      internalID: -1162270350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_18
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1124
+        width: 94
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efddd7e4248c49439b8725fab528463
+      internalID: -1592203692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_19
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1119
+        width: 442
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09021a1c9a84aaf428fd135f9a976bd1
+      internalID: -852716206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_20
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 921
+        width: 296
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa2b5743cdd3e84eb55450cc613ce8c
+      internalID: 311347855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_21
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 921
+        width: 378
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8119e5d7b191dc43b6e377c609d450c
+      internalID: 1243766071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_22
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 921
+        width: 299
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fb086e39a8d2243b0adbad0df41b95
+      internalID: -1281846008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_23
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 921
+        width: 386
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8c85eba66f6c347bcbc217fcbdfb34
+      internalID: 1353194846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_24
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 925
+        width: 90
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950a11a418c3bdc49822ebbaa0f98f57
+      internalID: 585472403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_25
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 928
+        width: 68
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3362bb85e8df5994db1f7cb499f5cb5d
+      internalID: -621907199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_26
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 921
+        width: 387
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba018a2bc4ae75429da0f6d1f4b9060
+      internalID: -627603836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_27
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 718
+        width: 176
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9179f97aaa138c45a16d511b33864aa
+      internalID: -1591804289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_28
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 722
+        width: 247
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cf335c53063aa4da94abeb4aa2ab46
+      internalID: -655295699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_29
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 726
+        width: 176
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0077090835e588f4392458c1f75c174f
+      internalID: 1293347755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_30
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 726
+        width: 252
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432d44b65469f94429b4181199915d13
+      internalID: -1269128598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_31
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 726
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d31e76875ff07941a4b2a52aa17efc4
+      internalID: -756013480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_32
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 726
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f627686903ee9284eb85c969d0ba00a1
+      internalID: -550745160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_33
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 715
+        width: 254
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd96c6fa0a7ce14eb33bcf4839100a1
+      internalID: -1813292572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_34
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 523
+        width: 259
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230cc0ffbc858764e84f5f2440d1622c
+      internalID: -103241245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_35
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 523
+        width: 311
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6da0247df6cab4c8981b97cc302352
+      internalID: -898646630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_36
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 523
+        width: 263
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2197655dec12a9429e20adf27dfa9fa
+      internalID: 339757489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_37
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 523
+        width: 300
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f234c13942e5d64faced8fe5f796f28
+      internalID: -2040759072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_38
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 527
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5402c6ec8867e748b983602c8b0e60f
+      internalID: -319374156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_39
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 531
+        width: 64
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b82dc2aa4e40934caf06e893d468d49
+      internalID: 336618287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_40
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 519
+        width: 318
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d687f23be365c6b4ea78b6a98ae0c0ea
+      internalID: 1097085065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_41
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 317
+        width: 225
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1805c8965611c484c86bf00392f726a8
+      internalID: -1622019875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_42
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 324
+        width: 319
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebd9487bc7158e4cb4c98b9ecf28e40
+      internalID: -730733733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_43
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 321
+        width: 225
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ccb49aeaab98143bcdcc559d3f4311
+      internalID: 1260587581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_44
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 324
+        width: 326
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c7b66a85b64ac4f965d0ddb24b05a4
+      internalID: 1215875966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_45
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 328
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faed0f28a1438954caa9804f20727f0b
+      internalID: 1058484471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_46
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 321
+        width: 57
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12aef39dc70f8dd47b03d70552043f28
+      internalID: -1772529913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_47
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 317
+        width: 326
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48572798e3890bc46b735d3f49c1a45a
+      internalID: 1675791280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_48
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 317
+        width: 180
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a1609ff6e0e4d4b890c3e54b00c492
+      internalID: -519679249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_49
+      rect:
+        serializedVersion: 2
+        x: 3223
+        y: 332
+        width: 154
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45706febb5105054b86194cd87b62e98
+      internalID: -1985788224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_50
+      rect:
+        serializedVersion: 2
+        x: 3426
+        y: 328
+        width: 153
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff6a3d55c0e2f94e8f94d3fefa90fc3
+      internalID: -1783006923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_51
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 332
+        width: 154
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04153f25eabf9494e9096837a4c1a553
+      internalID: -1202950494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_52
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 122
+        width: 210
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fbed34ec4af74439f8e67b8416bc95
+      internalID: -2038530397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_53
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 126
+        width: 292
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcd700b49daef547a545ef29018dcf5
+      internalID: 1008848059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_54
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 122
+        width: 210
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4224c2613c7de741b2a309c0b2abcf3
+      internalID: -434664558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_55
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 126
+        width: 296
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04461651ac854ca41ab958d12348dd6d
+      internalID: 906506997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_56
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 122
+        width: 60
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f881140e85f992c4481acdabab8490fa
+      internalID: 2117026341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_57
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 122
+        width: 44
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10d07a0458b3f8439ba8105b64e7e99
+      internalID: -1963076594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_58
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 118
+        width: 299
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1912ec6d4aeeb4389e57aca43824a8
+      internalID: 1042576113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_59
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 118
+        width: 135
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246067b331e71f64993206ba499ff9df
+      internalID: 1926538024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_60
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 122
+        width: 146
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0441320fb4e0b5445a86bb851e4511cb
+      internalID: 676096323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_61
+      rect:
+        serializedVersion: 2
+        x: 3433
+        y: 122
+        width: 143
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40887623fec711469e158136ffab77d
+      internalID: -1537632092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1Env-Decoration_62
+      rect:
+        serializedVersion: 2
+        x: 3632
+        y: 122
+        width: 146
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a53dfa877de424380b8b63a9956329
+      internalID: 1233706824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Artboard 1Env-Decoration_0: 458286343
+      Artboard 1Env-Decoration_1: 980233970
+      Artboard 1Env-Decoration_10: 651906822
+      Artboard 1Env-Decoration_11: -1471670975
+      Artboard 1Env-Decoration_12: -423930708
+      Artboard 1Env-Decoration_13: -41772242
+      Artboard 1Env-Decoration_14: 195221111
+      Artboard 1Env-Decoration_15: 116089893
+      Artboard 1Env-Decoration_16: 1816788491
+      Artboard 1Env-Decoration_17: -1162270350
+      Artboard 1Env-Decoration_18: -1592203692
+      Artboard 1Env-Decoration_19: -852716206
+      Artboard 1Env-Decoration_2: -1358132788
+      Artboard 1Env-Decoration_20: 311347855
+      Artboard 1Env-Decoration_21: 1243766071
+      Artboard 1Env-Decoration_22: -1281846008
+      Artboard 1Env-Decoration_23: 1353194846
+      Artboard 1Env-Decoration_24: 585472403
+      Artboard 1Env-Decoration_25: -621907199
+      Artboard 1Env-Decoration_26: -627603836
+      Artboard 1Env-Decoration_27: -1591804289
+      Artboard 1Env-Decoration_28: -655295699
+      Artboard 1Env-Decoration_29: 1293347755
+      Artboard 1Env-Decoration_3: 1032874696
+      Artboard 1Env-Decoration_30: -1269128598
+      Artboard 1Env-Decoration_31: -756013480
+      Artboard 1Env-Decoration_32: -550745160
+      Artboard 1Env-Decoration_33: -1813292572
+      Artboard 1Env-Decoration_34: -103241245
+      Artboard 1Env-Decoration_35: -898646630
+      Artboard 1Env-Decoration_36: 339757489
+      Artboard 1Env-Decoration_37: -2040759072
+      Artboard 1Env-Decoration_38: -319374156
+      Artboard 1Env-Decoration_39: 336618287
+      Artboard 1Env-Decoration_4: 2020209156
+      Artboard 1Env-Decoration_40: 1097085065
+      Artboard 1Env-Decoration_41: -1622019875
+      Artboard 1Env-Decoration_42: -730733733
+      Artboard 1Env-Decoration_43: 1260587581
+      Artboard 1Env-Decoration_44: 1215875966
+      Artboard 1Env-Decoration_45: 1058484471
+      Artboard 1Env-Decoration_46: -1772529913
+      Artboard 1Env-Decoration_47: 1675791280
+      Artboard 1Env-Decoration_48: -519679249
+      Artboard 1Env-Decoration_49: -1985788224
+      Artboard 1Env-Decoration_5: 1647884669
+      Artboard 1Env-Decoration_50: -1783006923
+      Artboard 1Env-Decoration_51: -1202950494
+      Artboard 1Env-Decoration_52: -2038530397
+      Artboard 1Env-Decoration_53: 1008848059
+      Artboard 1Env-Decoration_54: -434664558
+      Artboard 1Env-Decoration_55: 906506997
+      Artboard 1Env-Decoration_56: 2117026341
+      Artboard 1Env-Decoration_57: -1963076594
+      Artboard 1Env-Decoration_58: 1042576113
+      Artboard 1Env-Decoration_59: 1926538024
+      Artboard 1Env-Decoration_6: 2089079825
+      Artboard 1Env-Decoration_60: 676096323
+      Artboard 1Env-Decoration_61: -1537632092
+      Artboard 1Env-Decoration_62: 1233706824
+      Artboard 1Env-Decoration_7: -825764873
+      Artboard 1Env-Decoration_8: 2024031190
+      Artboard 1Env-Decoration_9: 2096788485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

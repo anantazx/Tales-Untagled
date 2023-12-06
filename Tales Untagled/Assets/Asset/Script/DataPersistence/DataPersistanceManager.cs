@@ -223,12 +223,13 @@ public class DataPersistanceManager : MonoBehaviour
 
     public void CollectStar(int levelNumber, int starCounter)
     {
-        Debug.Log($"CollectStar called for level {levelNumber} with starCounter {starCounter}");
+        
         // mengupdate star rating jika level ada
         if (gameData.levelStarsCollected.ContainsKey(levelNumber))
         {
             gameData.levelStarsCollected[levelNumber] = Mathf.Clamp(starCounter, 0, 3);
             SaveGame();
+            Debug.Log($"CollectStar called for level {levelNumber} with starCounter {starCounter}");
         }
         else
         {

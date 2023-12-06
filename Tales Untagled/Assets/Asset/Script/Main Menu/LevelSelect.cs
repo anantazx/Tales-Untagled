@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class LevelSelect : MonoBehaviour
+public class LevelSelect : Menu
 {
 
     [Header("level&Stars")]
@@ -36,56 +36,139 @@ public class LevelSelect : MonoBehaviour
             // jika level sudah kebuka maka akan di enable untuk interaksi
             levelButtons[i].enabled = isUnlocked;
 
+            //Debug.Log("all star image is " + starImages[i]);
+
             //menampilkan bintang yang sudah di dapatkan ketika level kebuka atau sudah selesai
             if (isUnlocked && DataPersistanceManager.instance.IsLevelHaveStars(levelNumber))
             {
-                
+                //Debug.Log("unlocked State" + levelNumber);
                 int starCounter = DataPersistanceManager.instance.GetStarCountForLevels(levelNumber);
-                SetStarImages(starImages[i], starCounter);
-            }
+
+
+                foreach (Image starImage in starImages)
+                {
+                    Debug.Log("Star Image: " + starImage.name);
+                }
+
+                Debug.Log("calulating the star" + starCounter);
+
+                for (int j = 0; j < starImages.Length; j++)
+                {
+                    if (starImages[j] != null)
+                    {
+                        switch (starCounter)
+                        {
+                            case 1:
+                                if (starFilledSprites != null)
+                                {
+                                    Debug.Log("Case 1: image " + starImages[i].name);
+                                    starImages[i].sprite = starFilledSprites[0];
+                                    Debug.Log("star Image : " + starImages[i].sprite);
+                                }
+                                break;
+                            case 2:
+                                if (starFilledSprites != null)
+                                {
+                                    Debug.Log("Case 2: image " + starImages[i].name);
+                                    starImages[i].sprite = starFilledSprites[1];
+                                    Debug.Log("star Image : " + starImages[i].sprite);
+                                }
+                                break;
+                            case 3:
+                                if (starFilledSprites != null)
+                                {
+                                    Debug.Log("Case 3: image " + starImages[i].name);
+                                    starImages[i].sprite = starFilledSprites[2];
+                                    Debug.Log("star Image : " + starImages[i].sprite);
+                                }
+                                break;
+                            default:
+                                if (unfiledStarSprite != null)
+                                {
+                                    Debug.Log("Case default: image " + starImages[i].name);
+                                    starImages[i].sprite = unfiledStarSprite;
+                                }
+                                break;
+                        }
+                    }
+                }
+
+
+            }   
             else
             {
-                
+                //Debug.Log("Locked state" + levelNumber);
                 SetLockedState(starImages[i]);
                 levelButtons[i].interactable = false;
             }
 
+            
+
         }
     }
 
-    private void SetStarImages(Image starImages, int starCounter)
+   
+    /*doesnt workk, so sad dudee
+     * private void SetStarImages(Image[] starImages, int starCounter)
     {
-        for(int i = 0;i < starImages.transform.childCount;i++)
-        {
-            Image childStar = starImages.transform.GetChild(i).GetComponent<Image>();
+        Debug.Log($"in SetStarImages() function.  Number of star images: {starImages.Length}, star Images :  {starImages}, star counter {starCounter}");
 
-            if (childStar != null)
+        foreach(Image starImage in starImages)
+        {
+            Debug.Log("Star Image: " + starImage.name);
+        }
+
+
+        for (int i = 0; i < starImages.Length; i++)
+        {
+            if (starImages[i] != null)
             {
-               switch (starCounter)
+                switch (starCounter)
                 {
                     case 1:
-                        childStar.sprite = starFilledSprites[1];
+                        if (starFilledSprites != null)
+                        {
+                            Debug.Log("Case 1: image " + starImages[i].name);
+                            starImages[i].sprite = starFilledSprites[0];
+                            Debug.Log("star Image : " + starImages[i].sprite);
+                        }
                         break;
                     case 2:
-                        childStar.sprite = starFilledSprites[2];
+                        if (starFilledSprites != null)
+                        {
+                            Debug.Log("Case 2: image " + starImages[i].name);
+                            starImages[i].sprite = starFilledSprites[1];
+                            Debug.Log("star Image : " + starImages[i].sprite);
+                        }
                         break;
                     case 3:
-                        childStar.sprite = starFilledSprites[3];
+                        if (starFilledSprites != null)
+                        {
+                            Debug.Log("Case 3: image " + starImages[i].name);
+                            starImages[i].sprite = starFilledSprites[2];
+                            Debug.Log("star Image : " + starImages[i].sprite);
+                        }
                         break;
                     default:
-                        childStar.sprite = unfiledStarSprite;
+                        if (unfiledStarSprite != null)
+                        {
+                            Debug.Log("Case default: image " + starImages[i].name);
+                            starImages[i].sprite = unfiledStarSprite;
+                        }
                         break;
                 }
             }
+            
 
         }
     }
-
+    */
     private void SetLockedState(Image starImages)
     {
+        
         starImages.sprite = unfiledStarSprite;
     }
 
-    
+   
 
 }

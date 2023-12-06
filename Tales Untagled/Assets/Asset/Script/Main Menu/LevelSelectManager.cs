@@ -33,19 +33,19 @@ public class LevelSelectManager : Menu
 
     public void LevelCompleted(int currentLevel)
     {
-        Debug.Log("Current level" + currentLevel);
+       
 
         if (DataPersistanceManager.instance.IsLevelUnlocked(currentLevel))
         {
             int starCounter = DataPersistanceManager.instance.GetStarCountForLevels(currentLevel);
-            Debug.Log("starCounter " + starCounter);
+            
 
             DataPersistanceManager.instance.CollectStar(currentLevel, starCounter);
 
             // membuka next level
             int nextLevel = currentLevel + 1;
             DataPersistanceManager.instance.UnlockedLevel(nextLevel);
-
+            Debug.Log("Next level" + nextLevel);
             //save game data
             DataPersistanceManager.instance.SaveGame();
 

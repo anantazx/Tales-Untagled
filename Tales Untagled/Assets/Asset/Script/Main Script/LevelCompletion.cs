@@ -48,8 +48,10 @@ public class LevelCompletion : MonoBehaviour
     private bool PlayerHasCollectedStars()
     {
         int starCounter = DataPersistanceManager.instance.GetStarCountForLevels(LevelSelectManager.instance.currentLevel);
-        Debug.Log("Star Counter: " + starCounter);
-        Debug.Log("Current Level: " + LevelSelectManager.instance.currentLevel);
+        Debug.Log($"at LevelCompleteFunction(). Star Counter:  {starCounter}, ItemCollector Stars: {ItemCollector.Instance.stars}, Finish level:  {LevelSelectManager.instance.currentLevel}");
+
+        DataPersistanceManager.instance.SaveGame();
+
         return starCounter > 0;
     }
 }
