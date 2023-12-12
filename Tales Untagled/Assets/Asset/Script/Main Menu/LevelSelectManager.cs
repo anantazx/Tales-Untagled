@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class LevelSelectManager : Menu
 {
@@ -11,6 +11,12 @@ public class LevelSelectManager : Menu
     public static LevelSelectManager instance { get; private set; }
 
     [SerializeField] private GameObject popUp;
+
+    [Header("Loading Screen")]
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private GameObject levelSelect;
+    [SerializeField] private GameObject starLevel;
+    [SerializeField] private Slider loadingSlider;
 
     private void Awake()
     {
@@ -58,8 +64,13 @@ public class LevelSelectManager : Menu
 
     public void SelectLevel(int levelNumber)
     {
+        levelSelect.SetActive(false);
+        starLevel.SetActive(false);
+        loadingScreen.SetActive(true);
+
         string levelSceneName = "Level " + levelNumber;
-        SceneManager.LoadSceneAsync(levelSceneName);
+        StartCoroutine(LoadLevelAsync(levelSceneName));
+
 
         SetCurrentLevel(levelNumber);
         GetprofileID();
@@ -84,7 +95,7 @@ public class LevelSelectManager : Menu
     public void BackToMenu()
     {
         DataPersistanceManager.instance.SaveGame();
-        SceneManager.LoadSceneAsync("Main Menu");
+        SceneManager.LoadSceneAsync("Chapter Select");
     }
 
     public void ActivePopUp()
@@ -97,6 +108,17 @@ public class LevelSelectManager : Menu
         popUp.gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
         popUp.gameObject.SetActive(false);
+    }
+
+    private IEnumerator LoadLevelAsync(string sceneManager)
+    {
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneManager);
+        while (!loadOperation.isDone)
+        {
+            float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
+            loadingSlider.value = progressValue;
+            yield return null;
+        }
     }
     
 }

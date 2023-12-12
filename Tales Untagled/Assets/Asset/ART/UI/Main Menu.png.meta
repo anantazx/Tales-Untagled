@@ -1,0 +1,1025 @@
+fileFormatVersion: 2
+guid: de8a67f2209361d45b6ef1fa5d8996e7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Main Menu_0
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 429
+        width: 784
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f682822187192bf41848893707c57fe1
+      internalID: -2003760266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_7
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1630
+        width: 3158
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7a9aa385eb8c642b9a94699ff4bb4c
+      internalID: 100944405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_67
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1450
+        width: 641
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657d4eaffb104284987d24a1f6ed4305
+      internalID: 1166462843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_71
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1450
+        width: 594
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38feb14e33c4c49498f5eb3becbd1875
+      internalID: 1300591463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_73
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1450
+        width: 610
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae4a7c5ff4109240942d3d81f930beb
+      internalID: -1750712281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_203
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1030
+        width: 615
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fb3b54fd4dfa244aba8377ae4d9660
+      internalID: -1585449044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_205
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1013
+        width: 615
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78542116c0be7f442be0b978c2cce952
+      internalID: -1278843095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_207
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 1030
+        width: 615
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4158ef8eb7a0eb4468cf5bf3d5068a18
+      internalID: -1055611092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_264
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 832
+        width: 659
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9ea6d8354b6d441a522ccbaa2fb243
+      internalID: 536379350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_270
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 832
+        width: 659
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b790b11e520b63448e21387d0db2bac
+      internalID: 923527117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_272
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 818
+        width: 659
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a69b4b9cd5fbd74ba68d6a6de868bda
+      internalID: 1807768876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_327
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 637
+        width: 837
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c055d3acad1b14a924929baeef8e4c
+      internalID: -2015248093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_329
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 634
+        width: 837
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ffe460537cfb441af84d3686f93525
+      internalID: 1820789620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_336
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 620
+        width: 586
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06e31153710b924dac1aa052926305d
+      internalID: 1611959726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_391
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 429
+        width: 784
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9036d61c34cc15c4db40ec2b61a02827
+      internalID: 1631413041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_395
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 419
+        width: 614
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42b042d81c94744ea755b7d99f5a51c
+      internalID: 1325271406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_453
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 231
+        width: 518
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e99a6d4c4077244b86dea893a149efc
+      internalID: 137609106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_457
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 221
+        width: 518
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19457679356cd624fb688c79f369d94c
+      internalID: -48958902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_1
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 231
+        width: 518
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489756f5bac821247941e92d671f85a8
+      internalID: -1474816763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Menu_2
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1819
+        width: 3168
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d7ecd4f57f05a459d2aaa7645a90a2
+      internalID: 1364140994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Main Menu_0: -2003760266
+      Main Menu_1: -1474816763
+      Main Menu_10: 722574060
+      Main Menu_100: 485664335
+      Main Menu_101: -1579202690
+      Main Menu_102: 2096200600
+      Main Menu_103: -1788210189
+      Main Menu_104: -1267174067
+      Main Menu_105: -916129990
+      Main Menu_106: -202240658
+      Main Menu_107: 1164104054
+      Main Menu_108: 66751369
+      Main Menu_109: 621215928
+      Main Menu_11: -82436561
+      Main Menu_110: 1618436178
+      Main Menu_111: 1838084230
+      Main Menu_112: -441259687
+      Main Menu_113: -820046235
+      Main Menu_114: -1312302331
+      Main Menu_115: -986306045
+      Main Menu_116: 1523547971
+      Main Menu_117: 254746150
+      Main Menu_118: -473183754
+      Main Menu_119: 1867594146
+      Main Menu_12: -890024148
+      Main Menu_120: 1741501773
+      Main Menu_121: -2012947131
+      Main Menu_122: 1489513407
+      Main Menu_123: -1118890891
+      Main Menu_124: 383676048
+      Main Menu_125: 1755616415
+      Main Menu_126: 605124946
+      Main Menu_127: 1827699699
+      Main Menu_128: 1627630074
+      Main Menu_129: 1005927023
+      Main Menu_13: 1082479776
+      Main Menu_130: 1995585732
+      Main Menu_131: 576774437
+      Main Menu_132: 422558403
+      Main Menu_133: 1803130463
+      Main Menu_134: 1097932161
+      Main Menu_135: 800410323
+      Main Menu_136: -331161383
+      Main Menu_137: 206998132
+      Main Menu_138: 309989743
+      Main Menu_139: 512628977
+      Main Menu_14: 1540791431
+      Main Menu_140: 473544923
+      Main Menu_141: 1333420122
+      Main Menu_142: 1161156982
+      Main Menu_143: 160171020
+      Main Menu_144: -461621959
+      Main Menu_145: 2020866708
+      Main Menu_146: -679303517
+      Main Menu_147: 1813004586
+      Main Menu_148: -821758384
+      Main Menu_149: -1681735553
+      Main Menu_15: 580516339
+      Main Menu_150: 1120117905
+      Main Menu_151: -927133028
+      Main Menu_152: -1991432010
+      Main Menu_153: -1576684474
+      Main Menu_154: 123826376
+      Main Menu_155: -1594927259
+      Main Menu_156: 1836347518
+      Main Menu_157: 1354838605
+      Main Menu_158: -1621395615
+      Main Menu_159: 1470520171
+      Main Menu_16: -1609528231
+      Main Menu_160: -981397121
+      Main Menu_161: 1431712698
+      Main Menu_162: -894930982
+      Main Menu_163: -1223823253
+      Main Menu_164: 630154805
+      Main Menu_165: -1424905223
+      Main Menu_166: -1520964868
+      Main Menu_167: 137169226
+      Main Menu_168: 173573832
+      Main Menu_169: -1223072739
+      Main Menu_17: -1754672379
+      Main Menu_170: -130315551
+      Main Menu_171: -1926296163
+      Main Menu_172: -792033008
+      Main Menu_173: 1576510343
+      Main Menu_174: -1426838858
+      Main Menu_175: -672814959
+      Main Menu_176: 1916502041
+      Main Menu_177: -1726338379
+      Main Menu_178: 393278518
+      Main Menu_179: 1675688197
+      Main Menu_18: 1787291823
+      Main Menu_180: 904010801
+      Main Menu_181: 2073377397
+      Main Menu_182: -1082497746
+      Main Menu_183: -42394558
+      Main Menu_184: 874194122
+      Main Menu_185: 200748184
+      Main Menu_186: -1428623907
+      Main Menu_187: -1050177668
+      Main Menu_188: 1609428067
+      Main Menu_189: 1529949668
+      Main Menu_19: -1953463061
+      Main Menu_190: 589273613
+      Main Menu_191: -1829874678
+      Main Menu_192: -2138263211
+      Main Menu_193: 1142345939
+      Main Menu_194: -797570538
+      Main Menu_195: 738214180
+      Main Menu_196: -1560585687
+      Main Menu_197: -1968794718
+      Main Menu_198: -808652409
+      Main Menu_199: -305330241
+      Main Menu_2: 1364140994
+      Main Menu_20: 667964787
+      Main Menu_200: -537639670
+      Main Menu_201: 918505768
+      Main Menu_202: 1488079667
+      Main Menu_203: -1585449044
+      Main Menu_204: 591774546
+      Main Menu_205: -1278843095
+      Main Menu_206: -1415213721
+      Main Menu_207: -1055611092
+      Main Menu_208: 1862628645
+      Main Menu_209: -305590994
+      Main Menu_21: -1557708974
+      Main Menu_210: 170034804
+      Main Menu_211: -252435318
+      Main Menu_212: -266923114
+      Main Menu_213: 495140072
+      Main Menu_214: 347983664
+      Main Menu_215: 396306106
+      Main Menu_216: -1206299430
+      Main Menu_217: 1892828284
+      Main Menu_218: 390315641
+      Main Menu_219: 438164953
+      Main Menu_22: -1156889170
+      Main Menu_220: 772292358
+      Main Menu_221: 120559139
+      Main Menu_222: 1933294871
+      Main Menu_223: 1251133931
+      Main Menu_224: 1733001365
+      Main Menu_225: -809672070
+      Main Menu_226: 1759615211
+      Main Menu_227: 2068547566
+      Main Menu_228: 1832454695
+      Main Menu_229: -1163428792
+      Main Menu_23: 1388770375
+      Main Menu_230: 254411214
+      Main Menu_231: 2115162735
+      Main Menu_232: -256266363
+      Main Menu_233: -1805889288
+      Main Menu_234: 1223639760
+      Main Menu_235: -1132429913
+      Main Menu_236: -434802275
+      Main Menu_237: -1163893991
+      Main Menu_238: -829974152
+      Main Menu_239: 1048626324
+      Main Menu_24: 992658925
+      Main Menu_240: -601221202
+      Main Menu_241: 857712883
+      Main Menu_242: -722393328
+      Main Menu_243: -779312482
+      Main Menu_244: 158251758
+      Main Menu_245: 765790294
+      Main Menu_246: -834735878
+      Main Menu_247: -1432846654
+      Main Menu_248: -202370688
+      Main Menu_249: 1245908815
+      Main Menu_25: 625749515
+      Main Menu_250: 1107711715
+      Main Menu_251: 1854857627
+      Main Menu_252: 2041838307
+      Main Menu_253: 2042036997
+      Main Menu_254: 974309749
+      Main Menu_255: 701953190
+      Main Menu_256: 2136361091
+      Main Menu_257: -1087764365
+      Main Menu_258: 1753076969
+      Main Menu_259: 314418859
+      Main Menu_26: -1179904077
+      Main Menu_260: -422091102
+      Main Menu_261: 152100784
+      Main Menu_262: 689584861
+      Main Menu_263: -114598224
+      Main Menu_264: 536379350
+      Main Menu_265: 558048437
+      Main Menu_266: 753495796
+      Main Menu_267: 731210044
+      Main Menu_268: 949546691
+      Main Menu_269: -1493418704
+      Main Menu_27: -556436911
+      Main Menu_270: 923527117
+      Main Menu_271: -633154356
+      Main Menu_272: 1807768876
+      Main Menu_273: 2117556656
+      Main Menu_274: -1545527731
+      Main Menu_275: -89754412
+      Main Menu_276: -1687853217
+      Main Menu_277: 535320918
+      Main Menu_278: 861199290
+      Main Menu_279: -206215332
+      Main Menu_28: 1374401973
+      Main Menu_280: 656504202
+      Main Menu_281: -1862045889
+      Main Menu_282: -83886965
+      Main Menu_283: 1943229582
+      Main Menu_284: 440881887
+      Main Menu_285: 1266221392
+      Main Menu_286: -1532764302
+      Main Menu_287: 1633232627
+      Main Menu_288: -125771667
+      Main Menu_289: 1426074976
+      Main Menu_29: -359678388
+      Main Menu_290: -484965646
+      Main Menu_291: -726065251
+      Main Menu_292: 515705571
+      Main Menu_293: 1057070814
+      Main Menu_294: 1872440109
+      Main Menu_295: -1069192421
+      Main Menu_296: -986204699
+      Main Menu_297: 1020892458
+      Main Menu_298: 441331108
+      Main Menu_299: 498509184
+      Main Menu_3: 2025027398
+      Main Menu_30: 1052279934
+      Main Menu_300: -1713236079
+      Main Menu_301: 1672913135
+      Main Menu_302: 1424674094
+      Main Menu_303: -846729786
+      Main Menu_304: -903537229
+      Main Menu_305: -2065795677
+      Main Menu_306: 900421140
+      Main Menu_307: -973434859
+      Main Menu_308: 757431534
+      Main Menu_309: 1825214793
+      Main Menu_31: -557002344
+      Main Menu_310: -196003278
+      Main Menu_311: 2077177757
+      Main Menu_312: -2139171986
+      Main Menu_313: -915834778
+      Main Menu_314: 1299673935
+      Main Menu_315: -998504392
+      Main Menu_316: 1410786368
+      Main Menu_317: -2110834149
+      Main Menu_318: 1741601001
+      Main Menu_319: -1915234936
+      Main Menu_32: -1731096980
+      Main Menu_320: 1439443671
+      Main Menu_321: -512433455
+      Main Menu_322: 1565070224
+      Main Menu_323: 627851939
+      Main Menu_324: 98683117
+      Main Menu_325: -441565070
+      Main Menu_326: 1706036111
+      Main Menu_327: -2015248093
+      Main Menu_328: -2102034493
+      Main Menu_329: 1820789620
+      Main Menu_33: 1106265038
+      Main Menu_330: -1763856593
+      Main Menu_331: 1891411978
+      Main Menu_332: 229088276
+      Main Menu_333: -68017732
+      Main Menu_334: 2146716479
+      Main Menu_335: -1291672419
+      Main Menu_336: 1611959726
+      Main Menu_337: -1110093518
+      Main Menu_338: -1432011852
+      Main Menu_339: -1022885690
+      Main Menu_34: -1557478462
+      Main Menu_340: 1120597220
+      Main Menu_341: 2060574891
+      Main Menu_342: 1782780961
+      Main Menu_343: -1702623571
+      Main Menu_344: 170986596
+      Main Menu_345: 1870892914
+      Main Menu_346: -553654160
+      Main Menu_347: -1752012598
+      Main Menu_348: -619044832
+      Main Menu_349: 862071212
+      Main Menu_35: -2072272901
+      Main Menu_350: -802691049
+      Main Menu_351: 1152296247
+      Main Menu_352: 1261605661
+      Main Menu_353: 889483457
+      Main Menu_354: -1953336730
+      Main Menu_355: -1349850889
+      Main Menu_356: -2114832444
+      Main Menu_357: 42281431
+      Main Menu_358: 1299729240
+      Main Menu_359: -923072613
+      Main Menu_36: 1025033833
+      Main Menu_360: 1080730379
+      Main Menu_361: 2047652226
+      Main Menu_362: -1733918096
+      Main Menu_363: 374715541
+      Main Menu_364: 1904143908
+      Main Menu_365: 943634066
+      Main Menu_366: -704361912
+      Main Menu_367: 490191666
+      Main Menu_368: -1115449882
+      Main Menu_369: -1714518043
+      Main Menu_37: 717849464
+      Main Menu_370: 1434397420
+      Main Menu_371: -75823287
+      Main Menu_372: -1053765807
+      Main Menu_373: -2034843011
+      Main Menu_374: 1764459963
+      Main Menu_375: -1059811156
+      Main Menu_376: -1513689153
+      Main Menu_377: -343139335
+      Main Menu_378: -1110188338
+      Main Menu_379: -1390903693
+      Main Menu_38: -1596859503
+      Main Menu_380: -1661911114
+      Main Menu_381: -1332445866
+      Main Menu_382: -1269800752
+      Main Menu_383: -1937915516
+      Main Menu_384: -2099609463
+      Main Menu_385: 728922455
+      Main Menu_386: -1029822804
+      Main Menu_387: -308759524
+      Main Menu_388: 1374123946
+      Main Menu_389: 2047369879
+      Main Menu_39: 786235534
+      Main Menu_390: -1899316493
+      Main Menu_391: 1631413041
+      Main Menu_392: 1683955188
+      Main Menu_393: 1135564003
+      Main Menu_394: -754921610
+      Main Menu_395: 1325271406
+      Main Menu_396: 1351979528
+      Main Menu_397: 242806770
+      Main Menu_398: -509702563
+      Main Menu_399: -1887754495
+      Main Menu_4: 409688
+      Main Menu_40: -1953058059
+      Main Menu_400: -1179863593
+      Main Menu_401: -1118254330
+      Main Menu_402: -1101425135
+      Main Menu_403: -1525895853
+      Main Menu_404: -394345656
+      Main Menu_405: -1677307620
+      Main Menu_406: -689805975
+      Main Menu_407: -217568081
+      Main Menu_408: -825817485
+      Main Menu_409: 2139427825
+      Main Menu_41: 430242334
+      Main Menu_410: -602124495
+      Main Menu_411: -947699761
+      Main Menu_412: 1491099860
+      Main Menu_413: 1508449121
+      Main Menu_414: -268670063
+      Main Menu_415: 2065205117
+      Main Menu_416: 701825536
+      Main Menu_417: 269617396
+      Main Menu_418: -1892517636
+      Main Menu_419: -208839124
+      Main Menu_42: 281199829
+      Main Menu_420: -1378813689
+      Main Menu_421: 1646097154
+      Main Menu_422: 844745545
+      Main Menu_423: -769719020
+      Main Menu_424: 924566882
+      Main Menu_425: 450442769
+      Main Menu_426: 1529751804
+      Main Menu_427: -1048236722
+      Main Menu_428: 473448314
+      Main Menu_429: -1311204495
+      Main Menu_43: -725898149
+      Main Menu_430: 856048157
+      Main Menu_431: -710671808
+      Main Menu_432: 821036351
+      Main Menu_433: 1872229851
+      Main Menu_434: -260434394
+      Main Menu_435: -1196663807
+      Main Menu_436: -24304877
+      Main Menu_437: -2053316305
+      Main Menu_438: 1345681906
+      Main Menu_439: -784503882
+      Main Menu_44: 482756086
+      Main Menu_440: -1616764237
+      Main Menu_441: 82475781
+      Main Menu_442: -1084532724
+      Main Menu_443: 319812958
+      Main Menu_444: 1888153373
+      Main Menu_445: -277198009
+      Main Menu_446: -609584204
+      Main Menu_447: -1618781797
+      Main Menu_448: 635423253
+      Main Menu_449: -1903654965
+      Main Menu_45: -1261576083
+      Main Menu_450: -1619837750
+      Main Menu_451: 1825566763
+      Main Menu_452: 142246977
+      Main Menu_453: 137609106
+      Main Menu_454: -1062558894
+      Main Menu_455: -1509089009
+      Main Menu_456: -164572251
+      Main Menu_457: -48958902
+      Main Menu_458: -567462786
+      Main Menu_459: -2145112830
+      Main Menu_46: -403778683
+      Main Menu_460: -2106900445
+      Main Menu_461: -1792626521
+      Main Menu_462: -86899484
+      Main Menu_463: 1362099127
+      Main Menu_464: -1870533728
+      Main Menu_465: 1086149084
+      Main Menu_466: 1202074572
+      Main Menu_467: -587698795
+      Main Menu_468: 41425795
+      Main Menu_469: -1865895435
+      Main Menu_47: -596418738
+      Main Menu_470: -238887614
+      Main Menu_471: 551568230
+      Main Menu_472: -1658661213
+      Main Menu_473: 1449298722
+      Main Menu_474: -2009211642
+      Main Menu_475: 1679331909
+      Main Menu_476: -352196491
+      Main Menu_477: -1166590157
+      Main Menu_48: -1492900954
+      Main Menu_49: 1593418499
+      Main Menu_5: 1100734798
+      Main Menu_50: -1003375424
+      Main Menu_51: -1530256294
+      Main Menu_52: -891154725
+      Main Menu_53: 1394707724
+      Main Menu_54: 50236841
+      Main Menu_55: -1680570576
+      Main Menu_56: 109549307
+      Main Menu_57: 2108955753
+      Main Menu_58: 391011274
+      Main Menu_59: 905116565
+      Main Menu_6: -532488502
+      Main Menu_60: -86698383
+      Main Menu_61: 1364329774
+      Main Menu_62: -34962097
+      Main Menu_63: 935486183
+      Main Menu_64: -2143725746
+      Main Menu_65: 1256660343
+      Main Menu_66: -736031346
+      Main Menu_67: 1166462843
+      Main Menu_68: -1039483158
+      Main Menu_69: -39174306
+      Main Menu_7: 100944405
+      Main Menu_70: 1303852820
+      Main Menu_71: 1300591463
+      Main Menu_72: -485524260
+      Main Menu_73: -1750712281
+      Main Menu_74: 1662916030
+      Main Menu_75: 1384924178
+      Main Menu_76: -1172911809
+      Main Menu_77: 1108172069
+      Main Menu_78: 2097723765
+      Main Menu_79: -1203698006
+      Main Menu_8: -883320697
+      Main Menu_80: -2131658767
+      Main Menu_81: 490434726
+      Main Menu_82: 1644061207
+      Main Menu_83: 234399483
+      Main Menu_84: -1884940584
+      Main Menu_85: 1257599974
+      Main Menu_86: 1328482686
+      Main Menu_87: 968744393
+      Main Menu_88: 207291112
+      Main Menu_89: 328549555
+      Main Menu_9: 1906279290
+      Main Menu_90: 1402649654
+      Main Menu_91: 2089714165
+      Main Menu_92: -964030889
+      Main Menu_93: 447485025
+      Main Menu_94: 2584340
+      Main Menu_95: -1170119617
+      Main Menu_96: 1050814174
+      Main Menu_97: 1222333551
+      Main Menu_98: 647845650
+      Main Menu_99: -569178746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

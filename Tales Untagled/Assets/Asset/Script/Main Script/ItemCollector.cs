@@ -61,7 +61,7 @@ public class ItemCollector : MonoBehaviour, IDataPersistence
     {
         deathCounterText.text = "X " + deathCount;
         paperRollsText.text = "Paper Rolls : " + PaperRolls;
-        starsText.text = stars + " /3" ;
+        starsText.text = stars + " / 3" ;
     }
 
 

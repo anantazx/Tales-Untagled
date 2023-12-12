@@ -119,7 +119,7 @@ public class LevelSelect : Menu
         }
 
 
-        for (int i = 0; i < starImages.Length; i++)
+        for (int i = 0; i < starImages.Length; i++) 
         {
             if (starImages[i] != null)
             {

@@ -1,0 +1,2 @@
+VAR choiceMake =""
+VAR ActiveEndGame = ""

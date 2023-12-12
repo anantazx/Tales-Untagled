@@ -7,7 +7,13 @@ using UnityEngine.UI;
 public class SaveSlotManager : Menu
 {
     private SaveSlot[] saveSlots;
-    
+    [Header("Loading Screen")]
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private GameObject mainMenuUI;
+    [SerializeField] private GameObject saveSlotUI;
+    [SerializeField] private GameObject deleteSaveSlotUI;
+    [SerializeField] private Slider loadingSlider;
+
     private bool IsLoadingGame = false;
 
     [Header("MenuButton")]
@@ -69,8 +75,12 @@ public class SaveSlotManager : Menu
         DataPersistanceManager.instance.SaveGame();
 
         // load scene dimana aka mengaktifkan save games karena OnSceneUnload() pada DataPersistanceManager
+
+        mainMenuUI.SetActive(false);
+        loadingScreen.SetActive(true);
+
         Debug.Log("load Game");
-        SceneManager.LoadSceneAsync("Level Selection");
+        StartCoroutine(LoadLevelAsync("Chapter Select"));
 
     }
 
@@ -137,6 +147,19 @@ public class SaveSlotManager : Menu
             saveSlot.SetInteractabel(false);
         }
         backButton.interactable = false;
+    }
+
+
+    private IEnumerator LoadLevelAsync(string levelToLoad)
+    {
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
+
+        while (!loadOperation.isDone)
+        {
+            float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
+            loadingSlider.value = progressValue;
+            yield return null;
+        }
     }
 
 }

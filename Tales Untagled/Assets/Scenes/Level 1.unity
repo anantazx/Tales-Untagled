@@ -513,31 +513,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Managers
       objectReference: {fileID: 0}
-    - target: {fileID: 828232905314090807, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 170.5235
-      objectReference: {fileID: 0}
-    - target: {fileID: 828232905314090807, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 205.7243
-      objectReference: {fileID: 0}
-    - target: {fileID: 828232905314090807, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -27.00558
-      objectReference: {fileID: 0}
-    - target: {fileID: 828232905314090807, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 56.803234
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130931557193786013, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
-      propertyPath: m_margin.x
-      value: 32.539436
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130931557193786013, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
-      propertyPath: m_margin.z
-      value: 33.708824
-      objectReference: {fileID: 0}
-    - target: {fileID: 4298818247001859037, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
+    - target: {fileID: 2273444921397280989, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -581,6 +557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7036784421529059597, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
+      propertyPath: gameObjects
+      value: 
+      objectReference: {fileID: 311440643}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1054,7 +1034,7 @@ PrefabInstance:
     - target: {fileID: 516467880227811396, guid: dbd12b518e350004f9f5e1cc87ff058a, type: 3}
       propertyPath: CoinsText
       value: 
-      objectReference: {fileID: 1550602622}
+      objectReference: {fileID: 0}
     - target: {fileID: 516467880227811396, guid: dbd12b518e350004f9f5e1cc87ff058a, type: 3}
       propertyPath: paperRollsText
       value: 
@@ -1069,7 +1049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1076789309841296132, guid: dbd12b518e350004f9f5e1cc87ff058a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00000024801182
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1076789309841296132, guid: dbd12b518e350004f9f5e1cc87ff058a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1113,7 +1093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8787493041600450850, guid: dbd12b518e350004f9f5e1cc87ff058a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 66.05
       objectReference: {fileID: 0}
     - target: {fileID: 8787493041600450850, guid: dbd12b518e350004f9f5e1cc87ff058a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10658,17 +10638,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1550602622 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6086083408831646597, guid: 28e97021beb8acc4eb27b658b7a57f1c, type: 3}
-  m_PrefabInstance: {fileID: 164086195}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1550694930
 GameObject:
   m_ObjectHideFlags: 0
@@ -12993,7 +12962,7 @@ Transform:
   m_GameObject: {fileID: 2129737099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00024187892, y: 1.02024, z: -10}
+  m_LocalPosition: {x: 66.049736, y: 1.03746, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
