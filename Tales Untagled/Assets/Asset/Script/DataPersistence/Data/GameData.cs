@@ -29,19 +29,20 @@ public class GameData
     {
         // sistem memikirkan beberapa banyak paperRoll yang dikumpulkan
         int totalCollected = 0;
-        foreach (bool collected in paperRollCollected.Values)
+        foreach (int collected in levelStarsCollected.Values)
         {
-            if (collected)
+            if (collected != 0)
             {
-                totalCollected++;
+                totalCollected += collected;
             }
         }
 
         // memastikan kita tidak membagi dengan 0 ketika mengkalkulasi persennya
         int PercentageCompleted = -1;
-        if (paperRollCollected.Count != 0)
+        if (levelStarsCollected.Count != 0)
         {
-            PercentageCompleted = (totalCollected * 100 / paperRollCollected.Count);
+            int totalPossibleCollected = levelStarsCollected.Count * 3; // misalkan maksimum yang bisa dikumpulkan adalah 3 bintang untuk setiap lagu
+            PercentageCompleted = (totalCollected * 100 / totalPossibleCollected);
         }
         return PercentageCompleted;
     }

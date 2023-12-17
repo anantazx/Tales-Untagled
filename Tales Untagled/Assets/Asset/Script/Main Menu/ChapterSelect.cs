@@ -24,7 +24,7 @@ public class ChapterSelect : Menu
             totalChapter[i] = chapterGameObject[i].GetComponent<Button>();
         }
 
-        scrollStep = 2f / totalChapter.Length;
+        scrollStep = 1f;
 
         nextButton.onClick.AddListener(NextChapter);
         prevButton.onClick.AddListener(PrevChapter);
@@ -34,15 +34,15 @@ public class ChapterSelect : Menu
     // Update is called once per frame
     void Update()
     {
-        UpdateButtonInteractive();
+        //UpdateButtonInteractive();
 
     }
 
-    private void UpdateButtonInteractive()
+    /*private void UpdateButtonInteractive()
     {
         nextButton.interactable = scrollRect.horizontalNormalizedPosition <= 1;
         prevButton.interactable = scrollRect.horizontalNormalizedPosition >= 0;
-    }
+    }*/
 
     private void ScrollToChapter(float normalizePosition)
     {

@@ -8,10 +8,10 @@ INCLUDE Globals.ink
  (hmm sepertinya anak ini akan bertanya kepadaku)#speaker:<color=\#88BDFF>Toba </color> #potrait:Toba #layout:right
 *[hallo]
     Halo, bisakah kamu memberitahuku di mana aku?#speaker:<color=\#E17220>Adi</color> #potrait:Player#layout:left
-    Kamu berada di hutan dekat sungai. Tempat ini biasanya aku gunakan untuk memancing.#speaker:<color=\#88BDFF>Toba</color> #potrait:Toba #layout:right
+    Kamu berada di hutan dekat sungai. Tempat ini biasanya aku gunakan untuk memancing. dan namaku <color=\#88BDFF>Toba</color>.#speaker:<color=\#88BDFF>Toba</color> #potrait:Toba #layout:right
 *[siapa]
     Siapa namamu?#speaker:<color=\#E17220>Adi</color> #potrait:Player#layout:left
-    Namaku Toba. Aku sering datang ke sini untuk memancing. Ada yang membawamu ke tempat ini?#speaker:<color=\#88BDFF>Toba</color> #potrait:Toba #layout:right
+    Namaku <color=\#88BDFF>Toba</color>. Aku sering datang ke sini untuk memancing. Ada yang membawamu ke tempat ini?#speaker:<color=\#88BDFF>Toba</color> #potrait:Toba #layout:right
 *[apa yang]
     Apa yang sedang kamu lakukan di sini?#speaker:<color=\#E17220>Adi</color> #potrait:Player#layout:left
     Aku mencoba menangkap ikan untuk makan malam. Tempat ini cukup tenang. #speaker:<color=\#88BDFF>Toba</color> #potrait:Toba #layout:right
@@ -42,7 +42,7 @@ Aku berubah pikiran, aku ingin mencari jalan keluar dari tempat ini.#speaker:<co
 
 {
     - pilihan == "Selesai":
-        (Membantu Toba mungkin kunci untuk memahami tempat ini dan menemukan cara pulang.)#speaker:<color=\#E17220>Adi</color> #potrait:Player#layout:left
+        (Membantu <color=\#88BDFF>Toba</color> mungkin kunci untuk memahami tempat ini dan menemukan cara pulang.)#speaker:<color=\#E17220>Adi</color> #potrait:Player#layout:left
         ~ ActiveEndGame = "Open"
     - pilihan == "Postpone":
         Aku mengerti. Ambil waktumu, dan jika kamu berubah pikiran lagi, aku akan di sini.#speaker:<color=\#88BDFF>Toba</color> #potrait:Toba #layout:right
@@ -69,7 +69,7 @@ Bagaimana, apakah kau bisa membantuku#speaker:<color=\#88BDFF>Toba</color> #potr
 		    
 		    ->chosen("Selesai")
 	  +[Tidak]
-		    Aku tidak ingin membantuku untuk saat ini Toba#speaker:<color=\#E17220>Adi</color> #potrait:Player#layout:left
+		    Aku tidak ingin membantumu untuk saat ini <color=\#88BDFF>Toba</color> #speaker:<color=\#E17220>Adi</color> #potrait:Player#layout:left
 		    ->chosen("Postpone")
 -> END
 

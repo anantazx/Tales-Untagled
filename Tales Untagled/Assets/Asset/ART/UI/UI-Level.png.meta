@@ -886,6 +886,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI-Level_37
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 646
+        width: 345
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9eee70a566aef54b9372da484aa5e17
+      internalID: -520699816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -928,6 +949,7 @@ TextureImporter:
       UI-Level_34: 1201423781
       UI-Level_35: 32485921
       UI-Level_36: 715122103
+      UI-Level_37: -520699816
       UI-Level_4: -154374167
       UI-Level_5: -1645551272
       UI-Level_6: 1848625289

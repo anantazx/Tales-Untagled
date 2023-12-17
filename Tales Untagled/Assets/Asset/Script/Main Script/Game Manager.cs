@@ -91,7 +91,7 @@ public class GameManager : Menu
                 // function untuk mengeksekusi jika kita menekan yes
                 () =>
                 {
-                    SceneManager.LoadSceneAsync("Level Selection");
+                    SceneManager.LoadSceneAsync("Main Menu");
                 },
                 // function untuk mengeksekusi jika kita menekan tidak
                 () =>

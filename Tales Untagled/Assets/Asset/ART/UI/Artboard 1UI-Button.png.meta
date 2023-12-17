@@ -1814,7 +1814,7 @@ TextureImporter:
       name: Artboard 1UI-Button_142
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 3194
         y: 200
         width: 200
         height: 200
@@ -1835,7 +1835,7 @@ TextureImporter:
       name: Artboard 1UI-Button_143
       rect:
         serializedVersion: 2
-        x: 3400
+        x: 3398
         y: 200
         width: 200
         height: 200
@@ -1856,7 +1856,7 @@ TextureImporter:
       name: Artboard 1UI-Button_144
       rect:
         serializedVersion: 2
-        x: 3600
+        x: 3599
         y: 200
         width: 200
         height: 200
