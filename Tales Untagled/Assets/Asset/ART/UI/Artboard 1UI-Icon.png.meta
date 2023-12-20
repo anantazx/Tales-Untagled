@@ -685,7 +685,7 @@ TextureImporter:
         width: 140
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -693,6 +693,27 @@ TextureImporter:
       bones: []
       spriteID: 945c732fbd2033d438b7185469066692
       internalID: -1601070713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1UI-Icon_28
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 1221
+        width: 160
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf912368ac7669b499949cd91f5fbfc3
+      internalID: -1438302279
       vertices: []
       indices: 
       edges: []
@@ -729,6 +750,7 @@ TextureImporter:
       Artboard 1UI-Icon_25: 1060499462
       Artboard 1UI-Icon_26: -19523273
       Artboard 1UI-Icon_27: -1601070713
+      Artboard 1UI-Icon_28: -1438302279
       Artboard 1UI-Icon_3: 731851853
       Artboard 1UI-Icon_4: 1469474634
       Artboard 1UI-Icon_5: 1729187713

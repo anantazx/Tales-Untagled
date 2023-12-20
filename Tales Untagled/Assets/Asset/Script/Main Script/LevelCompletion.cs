@@ -16,7 +16,7 @@ public class LevelCompletion : MonoBehaviour
             if (PlayerHasCollectedStars())
             {
                 LevelSelectManager.instance.LevelCompleted(LevelSelectManager.instance.currentLevel);
-                ItemCollector.Instance.CollectedPaperRolls();
+                DataPersistanceManager.instance.SaveGame();
                 SceneManager.LoadSceneAsync("Level Selection");
                 Debug.Log("level Complete");
             }

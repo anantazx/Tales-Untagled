@@ -7,10 +7,10 @@ public class CharacterMovement : MonoBehaviour
 {
     [Header("Basic Movement")]
     public float Speed;
-    public float JumpForce; 
+    public float JumpForce;
     private float Move;
     private float jump;
-    [SerializeField]private Rigidbody2D RB;
+    [SerializeField] private Rigidbody2D RB;
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private LayerMask Groundlayer;
 
@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour
     private bool DoubleJump;
     private float JumpBufferTIme = 0.2f;
     private float JumpBufferCounter;
-    [SerializeField]private float CoyoteTime = 0.1f;
+    [SerializeField] private float CoyoteTime = 0.1f;
     private float CoyoteTimeCounter;
 
 
@@ -31,7 +31,7 @@ public class CharacterMovement : MonoBehaviour
     private float WallJumpingTime = 0.2f;
     private float WallJumpingCounter;
     private float WallJumpingDuration = 0.4f;
-    [SerializeField]private Vector2 WallJumpingPower = new Vector2 (10f, 20f);
+    [SerializeField] private Vector2 WallJumpingPower = new Vector2(10f, 20f);
     [SerializeField] private Transform WallCheck;
     [SerializeField] private LayerMask Walllayer;
 
@@ -45,14 +45,23 @@ public class CharacterMovement : MonoBehaviour
     [Header("Effect")]
     [SerializeField] private ParticleSystem dust;
 
+    [Header("SFX Player")]
+    [SerializeField] private AudioSource playerSound;
+    [SerializeField] private AudioClip walkingSound;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip waterSplash;
+    [SerializeField] private AudioClip death;
+
+
+
     private bool Flipright = true;
     private bool isDead = false;
 
-  
+
     void Start()
     {
         RB = gameObject.GetComponent<Rigidbody2D>();
-        
+
     }
 
     // Update is called once per frame
@@ -92,6 +101,7 @@ public class CharacterMovement : MonoBehaviour
             {
                 JumpBufferCounter = JumpBufferTIme;
                 anim.SetBool("IsJumping", true);
+                PlaySFXSound(jumpSound);
                 CreateDust();
             }
             else
@@ -107,6 +117,7 @@ public class CharacterMovement : MonoBehaviour
                     DoubleJump = !DoubleJump;
                     JumpBufferCounter = 0f;
                     anim.SetBool("IsJumping", true);
+                    PlaySFXSound(jumpSound);
                     CreateDust();
                 }
             }
@@ -116,6 +127,7 @@ public class CharacterMovement : MonoBehaviour
                 anim.SetBool("IsJumping", true);
                 RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y * 0.5f);
                 CoyoteTimeCounter = 0f;
+                PlaySFXSound(jumpSound);
                 CreateDust();
             }
 
@@ -125,23 +137,23 @@ public class CharacterMovement : MonoBehaviour
             WallJump();
             Movement();
         }
-           
-            
-       
-        
+
+
+
+
 
     }
 
-  
+
     void Flip()
     {
         Vector3 currentScale = gameObject.transform.localScale;
         currentScale.x *= -1;
         gameObject.transform.localScale = currentScale;
         Flipright = !Flipright;
-        
+
     }
-   
+
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, Groundlayer);
@@ -177,6 +189,7 @@ public class CharacterMovement : MonoBehaviour
             if (!IsWallJumping)
             {
                 RB.velocity = new Vector2(Move * Speed, RB.velocity.y);
+                
                 CreateDust();
             }
         }
@@ -186,6 +199,7 @@ public class CharacterMovement : MonoBehaviour
             if (!IsWallJumping)
             {
                 Flip();
+                
             }
         }
 
@@ -193,6 +207,7 @@ public class CharacterMovement : MonoBehaviour
         {
             if (!IsWallJumping)
             {
+
                 Flip();
             }
         }
@@ -205,7 +220,7 @@ public class CharacterMovement : MonoBehaviour
             IsWallJumping = false;
             WallJumpingDirection = -transform.localScale.x;
             WallJumpingCounter = WallJumpingTime;
-            
+
             CancelInvoke(nameof(StopWallJumping));
         }
         else
@@ -219,7 +234,7 @@ public class CharacterMovement : MonoBehaviour
             RB.velocity = new Vector2(WallJumpingDirection * WallJumpingPower.x, WallJumpingPower.y);
             WallJumpingCounter = 0f;
 
-            if(transform.localScale.x != WallJumpingDirection)
+            if (transform.localScale.x != WallJumpingDirection)
             {
                 Flipright = !Flipright;
                 Vector3 localScale = transform.localScale;
@@ -227,13 +242,13 @@ public class CharacterMovement : MonoBehaviour
                 transform.localScale = localScale;
                 anim.SetBool("IsJumping", false);
                 anim.SetBool("IsWallJump", true);
-                
+                PlaySFXSound(jumpSound);
             }
 
             Invoke(nameof(StopWallJumping), WallJumpingDuration);
         }
 
-        
+
     }
 
     private void StopWallJumping()
@@ -267,22 +282,24 @@ public class CharacterMovement : MonoBehaviour
                 shapeParticell.position = new Vector3(1.2f, 1.6f, 0f);
                 dust.Play();
             }
-            else if(Move < 0)
+            else if (Move < 0)
             {
                 shapeParticell.position = new Vector3(-1.2f, 1.6f, 0f);
                 dust.Play();
             }
         }
 
-    
+
     }
 
     private void Die()
     {
-        isDead = true;  
-        anim.SetTrigger("Dead");    
+        PlaySFXSound(waterSplash);
+        isDead = true;
+        anim.SetTrigger("Dead");
+        PlaySFXSound(death);
         StartCoroutine(Respawn(2f));
-        
+
     }
 
     private IEnumerator Respawn(float duration)
@@ -292,29 +309,32 @@ public class CharacterMovement : MonoBehaviour
         transform.position = RespawnPoint.position;
         isDead = false;
         anim.SetTrigger("Alive");
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Water") )
+        if (collision.gameObject.CompareTag("Water"))
         {
             Die();
         }
 
-        else if (collision.gameObject.CompareTag("Box") )
+        else if (collision.gameObject.CompareTag("Box"))
         {
             anim.SetBool("IsPushing", true);
         }
     }
-
-  
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Box"))
         {
             anim.SetBool("IsPushing", false);
-        }  
+        }
+    }
+
+    private void PlaySFXSound(AudioClip audioClip)
+    {
+        playerSound.PlayOneShot(audioClip);
     }
 }

@@ -15,6 +15,12 @@ public class GameManager : Menu
 
     [Header("PopUps")]
     [SerializeField] private PopUp popUp;
+
+    [Header("level Music")]
+    [SerializeField] private AudioSource levelMusic;
+    [SerializeField] private AudioClip waterAmbience;
+    [SerializeField] private AudioClip forestAmbience;
+
     private void Awake()
     {
         if (instance != null)
@@ -36,6 +42,9 @@ public class GameManager : Menu
         {
             Resume();
         }
+
+        PlayMusic(forestAmbience);
+        PlayMusic(waterAmbience);
         
     }
 
@@ -87,11 +96,12 @@ public class GameManager : Menu
     {
 
         popUp.ActivatedMenu(
-            "Are you sure you want to go back to Main Menu ?, all save will be lost ",
+            "Are you sure you want to save and go back to Main Menu ?",
                 // function untuk mengeksekusi jika kita menekan yes
                 () =>
                 {
                     SceneManager.LoadSceneAsync("Main Menu");
+                    DataPersistanceManager.instance.SaveGame();
                 },
                 // function untuk mengeksekusi jika kita menekan tidak
                 () =>
@@ -108,11 +118,12 @@ public class GameManager : Menu
     {
         
         popUp.ActivatedMenu(
-            "Are you sure you want to Exit Game ?",
+            "Are you sure you want to save & Exit Game ?",
                 // function untuk mengeksekusi jika kita menekan yes
                 () =>
                 {
                     Application.Quit();
+                    DataPersistanceManager.instance.SaveGame();
                     Debug.Log("Exit Game");
                 },
                 // function untuk mengeksekusi jika kita menekan tidak
@@ -124,5 +135,11 @@ public class GameManager : Menu
                     
                 }
             );
+    }
+
+
+    private void PlayMusic(AudioClip audio)
+    {
+        levelMusic.PlayOneShot(audio);
     }
 }

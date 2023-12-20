@@ -15,6 +15,9 @@ public class ItemCollector : MonoBehaviour, IDataPersistence
     [SerializeField] private TextMeshProUGUI deathCounterText;
     [SerializeField] private TextMeshProUGUI paperRollsText;
     [SerializeField] private TextMeshProUGUI starsText;
+
+    [SerializeField] private AudioSource starVoice;
+    [SerializeField] private AudioClip starsCollectedSound;
     
 
     private void Awake()
@@ -78,6 +81,7 @@ public class ItemCollector : MonoBehaviour, IDataPersistence
 
     public void StarsCollectedCount()
     {
+        PlaySFXSound(starsCollectedSound);
         stars++;
         DataPersistanceManager.instance.CollectStar(LevelSelectManager.instance.currentLevel,stars);
     }
@@ -90,6 +94,12 @@ public class ItemCollector : MonoBehaviour, IDataPersistence
     public int GetDeathCount()
     {
         return deathCount;
+    }
+
+
+    private void PlaySFXSound(AudioClip audioClip)
+    {
+        starVoice.PlayOneShot(audioClip);
     }
 
 }

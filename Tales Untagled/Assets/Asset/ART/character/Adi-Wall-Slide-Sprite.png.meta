@@ -118,7 +118,7 @@ TextureImporter:
         width: 257
         height: 484
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
         width: 278
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Adi-Wall-Slide-Sprite_2
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1072
         y: 19
-        width: 311
+        width: 391
         height: 465
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: Adi-Wall-Slide-Sprite_3
       rect:
         serializedVersion: 2
-        x: 1782
+        x: 1763
         y: 0
-        width: 264
+        width: 283
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Adi-Wall-Slide-Sprite_4
       rect:
         serializedVersion: 2
-        x: 2317
+        x: 2289
         y: 0
-        width: 243
+        width: 271
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

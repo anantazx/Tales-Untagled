@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialiezDataIfNull: 1
-  DisableDataPersistence: 1
-  OverRideSelelctedProfileID: 1
+  DisableDataPersistence: 0
+  OverRideSelelctedProfileID: 0
+  FirstLevelUnlocked: 0
   TestSelectedProfileID: Test
-  fileName: Test_Save_File
+  fileName: 'Save Slot '
   useEncryptionData: 0
