@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 96bed5cb1228cd04285e053aba97a40b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Artboard 1UI-PopUp_0
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 2296
+        width: 1254
+        height: 1704
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e19da9b1a7397f42ba1878cc3640f7e
+      internalID: -398139257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1UI-PopUp_1
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 2542
+        width: 1204
+        height: 1458
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee43154a1a89f594cb38ea228298e59d
+      internalID: -716088669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1UI-PopUp_60
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1070
+        width: 2010
+        height: 1329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2838cf98bc0b9264bbce2a59d2f0898a
+      internalID: 221567171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artboard 1UI-PopUp_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 57
+        width: 3296
+        height: 733
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d90714ba5b8ff741bbec8671f2f581b
+      internalID: -304775726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Artboard 1UI-PopUp_0: -398139257
+      Artboard 1UI-PopUp_1: -716088669
+      Artboard 1UI-PopUp_10: 1255611788
+      Artboard 1UI-PopUp_100: -905481786
+      Artboard 1UI-PopUp_101: -1747465502
+      Artboard 1UI-PopUp_102: 1007643609
+      Artboard 1UI-PopUp_103: -1993759383
+      Artboard 1UI-PopUp_104: 1671144073
+      Artboard 1UI-PopUp_105: -1670810789
+      Artboard 1UI-PopUp_106: -1373459560
+      Artboard 1UI-PopUp_107: 2039217676
+      Artboard 1UI-PopUp_108: 290436835
+      Artboard 1UI-PopUp_109: -1404431122
+      Artboard 1UI-PopUp_11: 34837659
+      Artboard 1UI-PopUp_110: -1753958226
+      Artboard 1UI-PopUp_111: 237225965
+      Artboard 1UI-PopUp_112: -2146706021
+      Artboard 1UI-PopUp_113: 1606786780
+      Artboard 1UI-PopUp_114: 205746144
+      Artboard 1UI-PopUp_115: 1665570707
+      Artboard 1UI-PopUp_116: -409723844
+      Artboard 1UI-PopUp_117: -929212639
+      Artboard 1UI-PopUp_118: -2000208157
+      Artboard 1UI-PopUp_119: 1102170840
+      Artboard 1UI-PopUp_12: -1738505022
+      Artboard 1UI-PopUp_120: -490677045
+      Artboard 1UI-PopUp_121: 3139621
+      Artboard 1UI-PopUp_122: -2008004047
+      Artboard 1UI-PopUp_123: -491775082
+      Artboard 1UI-PopUp_124: -612344603
+      Artboard 1UI-PopUp_125: -1839735254
+      Artboard 1UI-PopUp_126: -1510383095
+      Artboard 1UI-PopUp_127: 290864983
+      Artboard 1UI-PopUp_128: 1603839946
+      Artboard 1UI-PopUp_129: -758253720
+      Artboard 1UI-PopUp_13: 1478415250
+      Artboard 1UI-PopUp_130: -19925987
+      Artboard 1UI-PopUp_131: -896275212
+      Artboard 1UI-PopUp_132: 870135124
+      Artboard 1UI-PopUp_133: 1265022775
+      Artboard 1UI-PopUp_134: -919368055
+      Artboard 1UI-PopUp_135: -631392344
+      Artboard 1UI-PopUp_136: 1965502590
+      Artboard 1UI-PopUp_137: -831298338
+      Artboard 1UI-PopUp_138: 1875146845
+      Artboard 1UI-PopUp_139: 1628484453
+      Artboard 1UI-PopUp_14: 1805052246
+      Artboard 1UI-PopUp_140: -2141935158
+      Artboard 1UI-PopUp_141: 1341327633
+      Artboard 1UI-PopUp_142: 560039884
+      Artboard 1UI-PopUp_143: 1715475395
+      Artboard 1UI-PopUp_144: 695124797
+      Artboard 1UI-PopUp_145: 1186036979
+      Artboard 1UI-PopUp_15: -39303991
+      Artboard 1UI-PopUp_16: -1781279626
+      Artboard 1UI-PopUp_17: 2065270716
+      Artboard 1UI-PopUp_18: 759825579
+      Artboard 1UI-PopUp_19: -1863188422
+      Artboard 1UI-PopUp_2: -304775726
+      Artboard 1UI-PopUp_20: -1304179814
+      Artboard 1UI-PopUp_21: -619760876
+      Artboard 1UI-PopUp_22: 1419628138
+      Artboard 1UI-PopUp_23: 1256124728
+      Artboard 1UI-PopUp_24: -482352929
+      Artboard 1UI-PopUp_25: 171102557
+      Artboard 1UI-PopUp_26: -313160308
+      Artboard 1UI-PopUp_27: 673470090
+      Artboard 1UI-PopUp_28: -68373521
+      Artboard 1UI-PopUp_29: 575677940
+      Artboard 1UI-PopUp_3: -317727772
+      Artboard 1UI-PopUp_30: -423621192
+      Artboard 1UI-PopUp_31: 154792867
+      Artboard 1UI-PopUp_32: -365486973
+      Artboard 1UI-PopUp_33: -591903746
+      Artboard 1UI-PopUp_34: 1565519202
+      Artboard 1UI-PopUp_35: 2003159321
+      Artboard 1UI-PopUp_36: -154659163
+      Artboard 1UI-PopUp_37: 1444303072
+      Artboard 1UI-PopUp_38: 273553073
+      Artboard 1UI-PopUp_39: -1988158326
+      Artboard 1UI-PopUp_4: -512072849
+      Artboard 1UI-PopUp_40: -100286635
+      Artboard 1UI-PopUp_41: -1742203494
+      Artboard 1UI-PopUp_42: 933379778
+      Artboard 1UI-PopUp_43: -97383914
+      Artboard 1UI-PopUp_44: -745668377
+      Artboard 1UI-PopUp_45: 2017678145
+      Artboard 1UI-PopUp_46: -39988711
+      Artboard 1UI-PopUp_47: 1358647747
+      Artboard 1UI-PopUp_48: 1834019124
+      Artboard 1UI-PopUp_49: 772580591
+      Artboard 1UI-PopUp_5: 1410194785
+      Artboard 1UI-PopUp_50: -1212763703
+      Artboard 1UI-PopUp_51: 143011969
+      Artboard 1UI-PopUp_52: -1004504993
+      Artboard 1UI-PopUp_53: -1887395179
+      Artboard 1UI-PopUp_54: 990554454
+      Artboard 1UI-PopUp_55: 874284836
+      Artboard 1UI-PopUp_56: 771067233
+      Artboard 1UI-PopUp_57: -1285537919
+      Artboard 1UI-PopUp_58: 1762837372
+      Artboard 1UI-PopUp_59: -1611264176
+      Artboard 1UI-PopUp_6: -1756229926
+      Artboard 1UI-PopUp_60: 221567171
+      Artboard 1UI-PopUp_61: -931308152
+      Artboard 1UI-PopUp_62: 1373604149
+      Artboard 1UI-PopUp_63: 2090887404
+      Artboard 1UI-PopUp_64: -470164392
+      Artboard 1UI-PopUp_65: 415699727
+      Artboard 1UI-PopUp_66: 1867001752
+      Artboard 1UI-PopUp_67: -709714150
+      Artboard 1UI-PopUp_68: 225388216
+      Artboard 1UI-PopUp_69: -41439551
+      Artboard 1UI-PopUp_7: -696470747
+      Artboard 1UI-PopUp_70: -1035754440
+      Artboard 1UI-PopUp_71: -811843481
+      Artboard 1UI-PopUp_72: 670951023
+      Artboard 1UI-PopUp_73: 1120693815
+      Artboard 1UI-PopUp_74: -1178226951
+      Artboard 1UI-PopUp_75: -81361669
+      Artboard 1UI-PopUp_76: -1760265644
+      Artboard 1UI-PopUp_77: 110711487
+      Artboard 1UI-PopUp_78: 678909248
+      Artboard 1UI-PopUp_79: -1043691196
+      Artboard 1UI-PopUp_8: -358596517
+      Artboard 1UI-PopUp_80: 1068172765
+      Artboard 1UI-PopUp_81: -778934321
+      Artboard 1UI-PopUp_82: 2106783852
+      Artboard 1UI-PopUp_83: 1970763828
+      Artboard 1UI-PopUp_84: 1607820746
+      Artboard 1UI-PopUp_85: -551580402
+      Artboard 1UI-PopUp_86: -163451543
+      Artboard 1UI-PopUp_87: -968404047
+      Artboard 1UI-PopUp_88: 2051397997
+      Artboard 1UI-PopUp_89: 1221330069
+      Artboard 1UI-PopUp_9: -275593860
+      Artboard 1UI-PopUp_90: -1665520811
+      Artboard 1UI-PopUp_91: -274842499
+      Artboard 1UI-PopUp_92: -467365456
+      Artboard 1UI-PopUp_93: -1438570149
+      Artboard 1UI-PopUp_94: 577057976
+      Artboard 1UI-PopUp_95: -84629960
+      Artboard 1UI-PopUp_96: -165435642
+      Artboard 1UI-PopUp_97: -375537566
+      Artboard 1UI-PopUp_98: 2002073644
+      Artboard 1UI-PopUp_99: 1261367503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
